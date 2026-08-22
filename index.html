@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>دکتر امید خیرخواه — دندان‌پزشک · تریدر · نوآور</title>
+<meta name="description" content="دندان‌پزشک، تریدر و نوآور. راهنمای تحصیل در قبرس شمالی. به ریشه نگاه می‌کنم، نه به شاخه."/>
+<meta name="author" content="Dr. Omid Kheirkhah"/>
+<link rel="canonical" href="https://fa.omidkheirkhah.com/"/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="دکتر امید خیرخواه — دندان‌پزشک · تریدر · نوآور"/>
+<meta property="og:description" content="دندان‌پزشک، تریدر و نوآور. راهنمای تحصیل در قبرس شمالی."/>
+<meta property="og:url" content="https://fa.omidkheirkhah.com/"/>
+<meta property="og:image" content="https://fa.omidkheirkhah.com/profile.jpg"/>
+<meta property="og:locale" content="fa_IR"/>
+<meta property="og:site_name" content="دکتر امید خیرخواه"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="دکتر امید خیرخواه — دندان‌پزشک، تریدر و نوآور"/>
+<meta name="twitter:description" content="مقالات علمی سلامت دهان، آموزش بازارهای مالی، نوآوری و راهنمای تحصیل در قبرس شمالی."/>
+<meta name="twitter:image" content="https://fa.omidkheirkhah.com/profile.jpg"/>
+<link rel="alternate" hreflang="fa" href="https://fa.omidkheirkhah.com/"/>
+<link rel="alternate" hreflang="tr" href="https://omidkheirkhah.com/"/>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"دکتر امید خیرخواه","url":"https://fa.omidkheirkhah.com/","inLanguage":"fa-IR","description":"مقالات علمی سلامت دهان، آموزش بازارهای مالی، نوآوری و راهنمای تحصیل در قبرس شمالی."}</script>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@200;300;400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --gold:#c9a84c;--gold-l:rgba(201,168,76,.7);--gold-dim:rgba(201,168,76,.12);
+  --dk:#080808;--dk2:#0f0f0f;--dk3:#161616;
+  --tx:#e8e0d0;--tx-d:rgba(232,224,208,.65);--tx-m:rgba(232,224,208,.90);
+  --wrap:min(1180px,92vw);--nav-h:80px;--e:cubic-bezier(.16,1,.3,1)
+}
+body{background:var(--dk);color:var(--tx);font-family:'Vazirmatn',sans-serif;font-weight:300;overflow-x:hidden;direction:rtl}
+a{color:inherit;text-decoration:none}
+.wrap{width:var(--wrap);margin:0 auto}
+
+/* NAV */
+nav{position:fixed;top:0;right:0;left:0;z-index:200;padding:0 60px;height:var(--nav-h);display:flex;align-items:center;justify-content:space-between;background:linear-gradient(to bottom,rgba(8,8,8,.95),transparent)}
+#logo{font-family:'Cormorant Garamond',serif;font-size:1rem;letter-spacing:.2em;color:var(--gold);text-transform:uppercase;cursor:pointer}
+#menuBtn{width:44px;height:44px;display:flex;flex-direction:column;justify-content:center;gap:6px;cursor:pointer;background:none;border:none;padding:8px}
+#menuBtn span{display:block;height:1px;background:var(--tx);transition:.3s}
+#menuOverlay{position:fixed;inset:0;z-index:300;background:rgba(8,8,8,.97);display:flex;flex-direction:column;justify-content:center;padding:60px;opacity:0;pointer-events:none;transition:opacity .4s var(--e)}
+#menuOverlay.open{opacity:1;pointer-events:all}
+.menu-item{font-family:'Cormorant Garamond',serif;font-size:clamp(2.2rem,5vw,4rem);font-weight:300;color:var(--tx-d);cursor:pointer;padding:8px 0;border-bottom:1px solid rgba(232,224,208,.08);transition:color .3s;opacity:0;transform:translateY(20px);transition:all .4s var(--e)}
+.menu-item:hover{color:var(--gold)}
+#menuOverlay.open .menu-item:nth-child(1){opacity:1;transform:none;transition-delay:.08s}
+#menuOverlay.open .menu-item:nth-child(2){opacity:1;transform:none;transition-delay:.13s}
+#menuOverlay.open .menu-item:nth-child(3){opacity:1;transform:none;transition-delay:.18s}
+#menuOverlay.open .menu-item:nth-child(4){opacity:1;transform:none;transition-delay:.23s}
+#menuOverlay.open .menu-item:nth-child(5){opacity:1;transform:none;transition-delay:.28s}
+#menuOverlay.open .menu-item:nth-child(6){opacity:1;transform:none;transition-delay:.33s}
+.menu-close{position:absolute;top:28px;left:60px;font-size:2rem;cursor:pointer;color:var(--tx-d)}
+.menu-socials{margin-top:40px;display:flex;gap:24px;font-size:.75rem;letter-spacing:.15em;color:var(--tx-d)}
+.menu-socials a:hover{color:var(--gold)}
+
+/* SCENES */
+.scene{display:none;min-height:100svh}
+.scene.active{display:block}
+#hub{display:block}
+
+/* HUB */
+.hub-body{position:relative;z-index:2;min-height:100svh;display:flex;flex-direction:column;justify-content:center;padding-top:var(--nav-h);padding-bottom:60px;overflow:hidden}
+.hero{padding:60px 0 20px;position:relative;z-index:3}
+@media (min-width:901px){.hero{margin-right:-60px;padding-left:60px}}
+.hero-avatar{width:84px;height:84px;border-radius:50%;overflow:hidden;border:1px solid rgba(201,168,76,.35);margin-bottom:28px;opacity:0;transform:translateY(14px) scale(.94);transition:all 1s var(--e) .15s;box-shadow:0 0 28px rgba(201,168,76,.18)}
+.hub-ready .hero-avatar{opacity:1;transform:none}
+.hero-avatar img{width:100%;height:100%;object-fit:cover;object-position:center top}
+.hero-tag{font-size:.65rem;letter-spacing:.25em;color:var(--tx-d);text-transform:uppercase;margin-bottom:28px;opacity:0;transform:translateY(10px);transition:all .8s var(--e) .3s}
+.hub-ready .hero-tag{opacity:1;transform:none}
+h1.hero-h{font-family:'Cormorant Garamond',serif;font-size:clamp(2.2rem,4.5vw,4.8rem);font-weight:300;line-height:1.15;letter-spacing:0;margin-bottom:32px}
+h1.hero-h .ln{display:block;overflow:hidden}
+h1.hero-h .ln>span{display:block;transform:translateY(100%);transition:transform .9s var(--e)}
+h1.hero-h em{font-style:italic;color:var(--gold)}
+.hub-ready h1.hero-h .ln:nth-child(1)>span{transform:none;transition-delay:.3s}
+.hub-ready h1.hero-h .ln:nth-child(2)>span{transform:none;transition-delay:.46s}
+.hero-lead{font-size:1rem;line-height:1.9;color:var(--tx-d);max-width:520px;margin-bottom:40px;opacity:0;transform:translateY(16px);transition:all .8s var(--e) .7s}
+.hub-ready .hero-lead{opacity:1;transform:none}
+.hero-stats{display:flex;gap:40px;opacity:0;transform:translateY(12px);transition:all .8s var(--e) .9s}
+.hub-ready .hero-stats{opacity:1;transform:none}
+.stat b{display:block;font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:300;color:var(--gold)}
+.stat span{font-size:.65rem;letter-spacing:.2em;color:var(--tx-d);text-transform:uppercase}
+.scroll-cue{margin-top:48px;font-size:.65rem;letter-spacing:.25em;color:var(--tx-d);display:flex;align-items:center;gap:12px;opacity:0;transition:opacity .8s var(--e) 1.2s}
+.hub-ready .scroll-cue{opacity:1}
+.sl{width:40px;height:1px;background:linear-gradient(to left,var(--gold),transparent)}
+
+/* HERO ARCH */
+.hero-arch{position:absolute;top:340px;left:-12%;transform:translateY(-50%);width:min(38vw,440px);height:min(38vw,440px);z-index:0;pointer-events:none;opacity:0;animation:archFade 1.6s var(--e) .8s forwards}
+@keyframes archFade{to{opacity:1}}
+.hero-arch .tooth-3d{position:absolute;inset:0;perspective:1200px}
+.hero-arch .tooth-img{width:100%;height:100%;object-fit:contain;mix-blend-mode:screen;animation:toothSpin 14s ease-in-out infinite;-webkit-mask:radial-gradient(circle at 50% 50%,#000 55%,transparent 78%);mask:radial-gradient(circle at 50% 50%,#000 55%,transparent 78%)}
+@keyframes toothSpin{0%{transform:rotateY(-22deg) rotateX(6deg)}50%{transform:rotateY(22deg) rotateX(-4deg)}100%{transform:rotateY(-22deg) rotateX(6deg)}}
+.hero-arch .tooth-pulse-svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.hero-arch .arch-pulse{fill:none;stroke:#c9a84c;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;filter:drop-shadow(0 0 6px rgba(201,168,76,.85));stroke-dasharray:1600;stroke-dashoffset:1600;animation:pulseDraw 14s ease-in-out infinite}
+@keyframes pulseDraw{0%,30%{stroke-dashoffset:1600;opacity:0}34%{opacity:1;stroke-dashoffset:1600}64%{stroke-dashoffset:0;opacity:1}74%{stroke-dashoffset:0;opacity:0}100%{stroke-dashoffset:1600;opacity:0}}
+.hero-arch .arch-arrow{fill:#e8c97a;opacity:0;animation:arrowMove 14s ease-in-out infinite;filter:drop-shadow(0 0 6px rgba(201,168,76,.9))}
+@keyframes arrowMove{0%,34%{opacity:0;offset-distance:0%}36%{opacity:1}64%{offset-distance:100%;opacity:1}72%{opacity:0;offset-distance:100%}100%{opacity:0;offset-distance:0%}}
+@media (max-width:900px){
+  .hero-arch{position:relative;top:auto;left:auto;transform:none;width:min(62vw,260px);height:min(62vw,260px);margin:0 auto 10px;z-index:1;opacity:0;animation:archFadeM 1.6s var(--e) .8s forwards}
+  @keyframes archFadeM{to{opacity:1}}
+  .hero{display:flex;flex-direction:column}
+  .hero-arch{order:-1}
+}
+
+/* PARTICLES */
+.particles{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+.p{position:absolute;width:2px;height:2px;background:var(--gold);border-radius:50%;opacity:0;animation:pfloat var(--dur) var(--del) infinite}
+@keyframes pfloat{0%{opacity:0;transform:translateY(0) scale(1)}20%{opacity:.4}80%{opacity:.15}100%{opacity:0;transform:translateY(-120px) scale(.3)}}
+
+/* WORLDS */
+.worlds{padding:80px 0 120px}
+.worlds-head{margin-bottom:64px;opacity:0;transform:translateY(24px);transition:all .9s var(--e)}
+.worlds-head.in{opacity:1;transform:none}
+.s-label{font-size:.65rem;letter-spacing:.3em;color:var(--gold);text-transform:uppercase;margin-bottom:16px;display:flex;align-items:center;gap:16px}
+.s-label::before{content:'';width:30px;height:1px;background:var(--gold);opacity:.5}
+.worlds-h{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4vw,3.8rem);font-weight:300;line-height:1.2}
+.worlds-h em{font-style:italic;color:var(--gold)}
+.worlds-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+.wcard{position:relative;padding:32px 28px;border:1px solid rgba(232,224,208,.1);background:var(--dk2);cursor:pointer;transition:all .4s var(--e);opacity:0;transform:translateY(20px);overflow:hidden}
+.wcard.in{opacity:1;transform:none}
+.wcard:hover,.wcard.glow{border-color:var(--wb);transform:translateX(-6px);box-shadow:0 8px 30px var(--wg)}
+.wcard:hover::before,.wcard.glow::before{opacity:.28}
+.wcard::before{content:'';position:absolute;inset:0;background:radial-gradient(75% 110% at 100% 0%,var(--wc),transparent 55%);opacity:.12;transition:opacity .5s}
+.wcard-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px}
+.wcard-num{font-family:'Cormorant Garamond',serif;font-size:.8rem;color:var(--wc);opacity:.65}
+.wcard-arr{width:32px;height:32px;border:1px solid rgba(232,224,208,.2);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.8rem;color:var(--tx-d);transition:all .4s}
+.wcard:hover .wcard-arr,.wcard.glow .wcard-arr{background:var(--wc);border-color:var(--wc);color:var(--dk);transform:rotate(45deg)}
+.wcard-icon{font-size:1.6rem;margin-bottom:12px}
+.wcard-name{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:300;margin-bottom:8px}
+.wcard-desc{font-size:.8rem;color:var(--tx-d);line-height:1.6}
+.hub-contact{margin-top:80px;padding:48px;border:1px solid rgba(201,168,76,.2);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:24px;opacity:0;transform:translateY(20px);transition:all .9s var(--e)}
+.hub-contact.in{opacity:1;transform:none}
+.hub-contact h3{font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:300}
+.hub-contact h3 em{font-style:italic;color:var(--gold)}
+.btn-teal{padding:14px 32px;background:transparent;border:1px solid var(--gold);color:var(--gold);font-family:'Vazirmatn',sans-serif;font-size:.8rem;letter-spacing:.15em;cursor:pointer;transition:all .3s}
+.btn-teal:hover{background:var(--gold);color:var(--dk)}
+
+/* SCENES - DENTAL */
+#dental{background:linear-gradient(180deg,#080808 0%,#16323f 18%,#3a5764 38%,#8aa3ad 58%,#cdd9de 75%,#eef4f7 90%,#eef4f7 100%)}
+.dental-hero{padding:calc(var(--nav-h) + 80px) 0 80px}
+h1.d-h{font-family:'Cormorant Garamond',serif;font-size:clamp(3rem,7vw,7rem);font-weight:300;line-height:1.05;max-width:700px}
+h1.d-h .ln{display:block;overflow:hidden}
+h1.d-h .ln>span{display:block;transform:translateY(100%);transition:transform .9s var(--e)}
+h1.d-h em{font-style:italic;color:var(--gold)}
+#dental.active h1.d-h .ln:nth-child(1)>span{transform:none;transition-delay:.2s}
+#dental.active h1.d-h .ln:nth-child(2)>span{transform:none;transition-delay:.36s}
+.d-lead{font-size:1.1rem;color:rgba(20,40,50,.8);max-width:500px;margin-top:24px;line-height:1.8;opacity:0;transform:translateY(16px);transition:all .8s var(--e) .5s}
+#dental.active .d-lead{opacity:1;transform:none}
+.d-cta{margin-top:32px;opacity:0;transition:opacity .8s var(--e) .8s}
+#dental.active .d-cta{opacity:1}
+.dental-content{background:#eef4f7;padding:80px 0}
+.dental-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:32px}
+.dental-card{background:#fff;padding:32px;border-right:3px solid var(--gold)}
+.dental-card h3{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:400;margin-bottom:12px;color:#1a2a30}
+.dental-card p{font-size:.9rem;color:#4a5a60;line-height:1.7}
+.dental-back{display:inline-flex;align-items:center;gap:8px;margin-bottom:32px;font-size:.75rem;letter-spacing:.2em;color:var(--gold);cursor:pointer;text-transform:uppercase}
+
+/* TRADING */
+#trading{background:linear-gradient(135deg,#080808,#080d08)}
+.trading-hero{padding:calc(var(--nav-h) + 80px) 0 80px}
+h1.t-h{font-family:'Cormorant Garamond',serif;font-size:clamp(3rem,7vw,7rem);font-weight:300;line-height:1.05;max-width:700px}
+h1.t-h em{font-style:italic;color:var(--gold)}
+.t-lead{font-size:1.1rem;color:var(--tx-d);max-width:500px;margin-top:24px;line-height:1.8}
+.trading-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;margin-top:60px}
+.t-card{padding:28px;border:1px solid rgba(201,168,76,.2);background:var(--dk2)}
+.t-card h3{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:300;margin-bottom:10px;color:var(--gold)}
+.t-card p{font-size:.85rem;color:var(--tx-d);line-height:1.7}
+
+/* UNIVERSITIES */
+#universiteler{background:var(--dk)}
+.uni-hero{padding:calc(var(--nav-h) + 80px) 0 60px}
+h1.u-h{font-family:'Cormorant Garamond',serif;font-size:clamp(2.5rem,5vw,5.5rem);font-weight:300;line-height:1.1}
+h1.u-h em{font-style:italic;color:var(--gold)}
+.u-lead{font-size:1rem;color:var(--tx-d);max-width:600px;margin-top:20px;line-height:1.9}
+.uni-why{background:var(--dk2);padding:60px 0}
+.why-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px;margin-top:40px}
+.why-card{padding:28px;border-right:2px solid var(--gold)}
+.why-card h4{font-family:'Cormorant Garamond',serif;font-size:1.2rem;margin-bottom:10px;color:var(--gold)}
+.why-card p{font-size:.85rem;color:var(--tx-d);line-height:1.7}
+.uni-list{padding:60px 0}
+.uni-card{display:grid;grid-template-columns:1fr 2fr;gap:40px;padding:40px;border:1px solid rgba(232,224,208,.1);background:var(--dk2);margin-bottom:24px;transition:border-color .3s}
+.uni-card:hover{border-color:rgba(201,168,76,.4)}
+.uni-card-badge{font-family:'Cormorant Garamond',serif;font-size:3rem;font-weight:300;color:var(--gold);opacity:.3}
+.uni-card-body h3{font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:300;margin-bottom:8px}
+.uni-card-body .uni-sub{font-size:.75rem;letter-spacing:.2em;color:var(--gold);text-transform:uppercase;margin-bottom:16px}
+.uni-card-body p{font-size:.9rem;color:var(--tx-d);line-height:1.7;margin-bottom:20px}
+.uni-tags{display:flex;flex-wrap:wrap;gap:8px}
+.uni-tag{padding:4px 12px;border:1px solid rgba(201,168,76,.3);font-size:.7rem;color:var(--gold);letter-spacing:.1em}
+.uni-cta-box{background:linear-gradient(135deg,rgba(201,168,76,.08),rgba(201,168,76,.02));border:1px solid rgba(201,168,76,.25);padding:48px;margin-top:48px;text-align:center}
+.uni-cta-box h3{font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:300;margin-bottom:16px}
+.uni-cta-box p{color:var(--tx-d);margin-bottom:28px;line-height:1.8}
+.uni-form{display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:600px;margin:0 auto}
+.uni-form input,.uni-form select{padding:12px 16px;background:var(--dk3);border:1px solid rgba(232,224,208,.15);color:var(--tx);font-family:'Vazirmatn',sans-serif;font-size:.85rem;direction:rtl}
+.uni-form input::placeholder{color:var(--tx-d)}
+.uni-form .full{grid-column:1/-1}
+.uni-form textarea{padding:12px 16px;background:var(--dk3);border:1px solid rgba(232,224,208,.15);color:var(--tx);font-family:'Vazirmatn',sans-serif;font-size:.85rem;resize:vertical;direction:rtl}
+.uni-form button{grid-column:1/-1;padding:16px;background:var(--gold);color:var(--dk);font-family:'Vazirmatn',sans-serif;font-size:.85rem;font-weight:500;letter-spacing:.1em;border:none;cursor:pointer;transition:opacity .3s}
+.uni-form button:hover{opacity:.85}
+
+/* ABOUT */
+#benkimim{background:var(--dk)}
+.bk-wrap{padding:calc(var(--nav-h) + 50px) 0 80px}
+.bk-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
+.bk-eyebrow{font-size:.65rem;letter-spacing:.3em;color:var(--gold);text-transform:uppercase;margin-bottom:20px}
+.bk-h{font-family:'Cormorant Garamond',serif;font-size:clamp(2.5rem,5vw,5rem);font-weight:300;line-height:1.1;margin-bottom:24px}
+.bk-h em{font-style:italic;color:var(--gold)}
+.bk-lead{font-family:'Cormorant Garamond',serif;font-size:1.2rem;color:var(--tx-d);line-height:1.7;margin-bottom:32px}
+.bk-text{font-size:.95rem;color:var(--tx-m);line-height:1.9;margin-bottom:20px}
+.bk-text em{color:var(--gold);font-style:normal}
+.bk-philo{border-right:2px solid var(--gold);padding:20px 24px;margin:40px 0;background:var(--gold-dim)}
+.bk-philo p{font-family:'Cormorant Garamond',serif;font-size:1.1rem;line-height:1.7;color:var(--tx)}
+.bk-philo span{font-size:.75rem;color:var(--tx-d);display:block;margin-top:8px}
+.timeline{border-right:1px solid rgba(201,168,76,.2);padding-right:24px}
+.tl-item{position:relative;margin-bottom:32px;padding-right:20px}
+.tl-item::before{content:'';position:absolute;right:-29px;top:6px;width:8px;height:8px;background:var(--gold);border-radius:50%}
+.tl-year{font-size:.7rem;letter-spacing:.2em;color:var(--gold);margin-bottom:6px;text-transform:uppercase}
+.tl-c h4{font-family:'Cormorant Garamond',serif;font-size:1.1rem;margin-bottom:4px}
+.tl-c p{font-size:.8rem;color:var(--tx-d);line-height:1.6}
+
+/* CONTACT */
+#iletisim{background:var(--dk)}
+.iletisim-wrap{min-height:100svh;display:flex;flex-direction:column;justify-content:center;padding:calc(var(--nav-h) + 50px) 0 80px}
+.iletisim-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
+.ct-eyebrow{font-size:.65rem;letter-spacing:.3em;color:var(--gold);text-transform:uppercase;margin-bottom:20px}
+.iletisim-grid h2{font-family:'Cormorant Garamond',serif;font-size:clamp(2.5rem,5vw,5rem);font-weight:300;line-height:1.1;margin-bottom:16px}
+.iletisim-grid h2 em{font-style:italic;color:var(--gold)}
+.iletisim-grid>div>p{font-size:.95rem;color:var(--tx-d);line-height:1.8;margin-bottom:8px}
+.ct-direct{color:var(--gold);font-size:.85rem;margin-bottom:32px}
+.contact-links{display:flex;flex-direction:column;gap:16px}
+.cl{display:flex;align-items:center;gap:16px;padding:20px 24px;border:1px solid rgba(232,224,208,.1);background:var(--dk2);transition:border-color .3s;text-decoration:none}
+.cl:hover{border-color:rgba(201,168,76,.4)}
+.cl-icon{width:40px;height:40px;background:var(--gold-dim);display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0}
+.cl-text{font-size:.7rem;letter-spacing:.2em;color:var(--tx-d);text-transform:uppercase;margin-bottom:2px}
+.cl-val{font-size:.9rem;color:var(--tx)}
+.contact-form{display:flex;flex-direction:column;gap:16px}
+.cf-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.cf-field label{display:block;font-size:.65rem;letter-spacing:.2em;color:var(--tx-d);text-transform:uppercase;margin-bottom:8px}
+.cf-field input,.cf-field textarea,.cf-field select{width:100%;padding:12px 16px;background:var(--dk3);border:1px solid rgba(232,224,208,.12);color:var(--tx);font-family:'Vazirmatn',sans-serif;font-size:.9rem;transition:border-color .3s;direction:rtl}
+.cf-field input:focus,.cf-field textarea:focus{outline:none;border-color:rgba(201,168,76,.4)}
+.cf-field textarea{resize:vertical;min-height:120px}
+.cf-submit{padding:16px 40px;background:transparent;border:1px solid var(--gold);color:var(--gold);font-family:'Vazirmatn',sans-serif;font-size:.8rem;letter-spacing:.2em;cursor:pointer;transition:all .3s;align-self:flex-start}
+.cf-submit:hover{background:var(--gold);color:var(--dk)}
+
+/* ARTICLES */
+#kesifet{background:var(--dk)}
+.kesifet-wrap{padding:calc(var(--nav-h) + 60px) 0 80px}
+.art-filters{display:flex;gap:12px;margin-bottom:40px;flex-wrap:wrap}
+.art-filter{padding:8px 20px;border:1px solid rgba(232,224,208,.15);font-size:.7rem;letter-spacing:.15em;cursor:pointer;transition:all .3s;color:var(--tx-d);text-transform:uppercase}
+.art-filter.active,.art-filter:hover{border-color:var(--gold);color:var(--gold)}
+.art-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:24px}
+.art-row{padding:28px;border:1px solid rgba(232,224,208,.08);background:var(--dk2);cursor:pointer;transition:all .3s}
+.art-row:hover{border-color:rgba(201,168,76,.3);transform:translateY(-3px)}
+.art-cat{font-size:.6rem;letter-spacing:.25em;color:var(--gold);text-transform:uppercase;margin-bottom:10px}
+.art-title{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:300;line-height:1.3;margin-bottom:8px}
+.art-meta{font-size:.7rem;color:var(--tx-d)}
+
+/* FOOTER */
+footer{padding:40px 60px;border-top:1px solid rgba(201,168,76,.1);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+footer p{font-size:.7rem;color:var(--tx-d)}
+.footer-logo{font-family:'Cormorant Garamond',serif;font-size:1rem;color:var(--gold);letter-spacing:.2em}
+.footer-links{display:flex;gap:16px}
+.footer-links a{font-size:.7rem;color:var(--tx-d);letter-spacing:.1em;transition:color .3s}
+.footer-links a:hover{color:var(--gold)}
+.lang-switch{display:flex;gap:8px;align-items:center;font-size:.65rem;letter-spacing:.15em;color:var(--tx-d)}
+.lang-switch a{color:var(--tx-d);padding:4px 8px;border:1px solid rgba(232,224,208,.15);transition:all .3s}
+.lang-switch a:hover,.lang-switch a.active{color:var(--gold);border-color:var(--gold)}
+
+@media(max-width:768px){
+  nav{padding:0 24px}
+  .bk-grid,.iletisim-grid,.uni-card{grid-template-columns:1fr}
+  .uni-card{gap:16px}
+  .cf-row{grid-template-columns:1fr}
+  footer{padding:30px 24px;flex-direction:column;text-align:center}
+  .menu-close{left:24px}
+  #menuOverlay{padding:40px 24px}
+  .uni-form{grid-template-columns:1fr}
+  .uni-form .full{grid-column:1}
+}
+</style>
+</head>
+<body>
+
+<!-- PARTICLES -->
+<div class="particles" id="particles"></div>
+
+<!-- MENU OVERLAY -->
+<div id="menuOverlay">
+  <span class="menu-close" id="menuClose">✕</span>
+  <div class="menu-item" data-goto="hub">صفحه اصلی</div>
+  <div class="menu-item" data-goto="kesifet">مقالات</div>
+  <div class="menu-item" data-goto="universiteler">دانشگاه‌ها</div>
+  <div class="menu-item" data-goto="benkimim">درباره من</div>
+  <div class="menu-item" data-goto="iletisim">تماس</div>
+  <div class="menu-socials">
+    <a href="mailto:omid@omidkheirkhah.com">ایمیل</a>
+    <a href="https://t.me/GoldPulse_Trading" target="_blank">تلگرام</a>
+    <a href="https://instagram.com/Dr.omid_kheirkhah" target="_blank">اینستاگرام</a>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav>
+  <a id="logo" data-goto="hub">دکتر امید خیرخواه</a>
+  <div class="lang-switch">
+    <a href="https://omidkheirkhah.com">TR</a>
+    <a href="https://fa.omidkheirkhah.com" class="active">FA</a>
+  </div>
+  <button id="menuBtn" aria-label="منو"><span></span><span></span></button>
+</nav>
+
+<!-- HUB -->
+<section id="hub" class="scene active">
+  <div class="wrap hub-body">
+    <div class="hero">
+      <div class="hero-arch" aria-hidden="true">
+        <div class="tooth-3d">
+          <img src="tooth.jpg" class="tooth-img" alt=""/>
+        </div>
+        <svg class="tooth-pulse-svg" viewBox="-340 -200 680 400">
+          <path class="arch-pulse" d="M-310,-10 L-200,-10 L-170,-10 L-150,-40 L-130,30 L-110,-10 L-40,-10 L-10,-10 L20,-25 L50,5 L80,-15 L110,-45 L160,-70 L210,-95 L260,-120 L310,-150"/>
+          <polygon class="arch-arrow" points="0,-6 12,0 0,6 3,0" style="offset-path:path('M-310,-10 L-200,-10 L-170,-10 L-150,-40 L-130,30 L-110,-10 L-40,-10 L-10,-10 L20,-25 L50,5 L80,-15 L110,-45 L160,-70 L210,-95 L260,-120 L310,-150')"/>
+        </svg>
+      </div>
+      <div class="hero-avatar"><img src="profile.jpg" alt="دکتر امید خیرخواه"/></div>
+      <p class="hero-tag">دندان‌پزشک · تریدر · <span style="color:var(--gold)">نوآور</span> · نویسنده</p>
+      <h1 class="hero-h">
+        <span class="ln"><span>به ریشه نگاه می‌کنم،</span></span>
+        <span class="ln"><span>نه به <em>شاخه.</em></span></span>
+      </h1>
+      <p class="hero-lead">دندان‌پزشکی، بازارهای مالی و نوآوری در ظاهر دنیاهای متفاوتی‌اند؛ اما هر سه با یک پرسش آغاز می‌شوند: مسئله واقعاً از کجا ریشه می‌گیرد؟ اینجا آموخته‌ها و تجربه‌هایم را شفاف، کاربردی و مستند به اشتراک می‌گذارم.</p>
+      <div class="hero-stats">
+        <div class="stat"><b>۶+</b><span>سال ترید</span></div>
+        <div class="stat"><b>∞</b><span>چشم‌انداز</span></div>
+      </div>
+      <div class="scroll-cue"><span class="sl"></span> دنیاها را کشف کنید</div>
+    </div>
+
+    <div class="worlds">
+      <div class="worlds-head wrap" id="worldsHead">
+        <p class="s-label">چه می‌کنم، چطور فکر می‌کنم</p>
+        <h2 class="worlds-h">هر کدام یک <em>دنیای</em> جداست — همه از یک ذهن.</h2>
+      </div>
+      <div class="wrap worlds-list">
+        <div class="wcard" style="--wc:#8fd4ee;--wb:rgba(143,212,238,.4);--wg:rgba(143,212,238,.1)" data-goto="dental">
+          <div class="wcard-top"><span class="wcard-num">۰۱</span><span class="wcard-arr">←</span></div>
+          <div class="wcard-icon">🦷</div>
+          <h3 class="wcard-name">دندان‌پزشکی</h3>
+          <p class="wcard-desc">پیشگیری، آموزش بیمار و سلامت دهان — با رویکرد علمی و قابل فهم</p>
+        </div>
+        <div class="wcard" style="--wc:#c9a84c;--wb:rgba(201,168,76,.4);--wg:rgba(201,168,76,.1)" data-goto="trading">
+          <div class="wcard-top"><span class="wcard-num">۰۲</span><span class="wcard-arr">←</span></div>
+          <div class="wcard-icon">📈</div>
+          <h3 class="wcard-name">ترید و سرمایه‌گذاری</h3>
+          <p class="wcard-desc">طلا، فارکس، بیت‌کوین — تحلیل ماکرو و تکنیکال، استراتژی و مدیریت ریسک</p>
+        </div>
+        <div class="wcard" style="--wc:#a8c9a0;--wb:rgba(168,201,160,.4);--wg:rgba(168,201,160,.1)" data-goto="universiteler">
+          <div class="wcard-top"><span class="wcard-num">۰۳</span><span class="wcard-arr">←</span></div>
+          <div class="wcard-icon">🎓</div>
+          <h3 class="wcard-name">تحصیل در قبرس شمالی</h3>
+          <p class="wcard-desc">اطلاعات و راهنمای انتخاب آگاهانه برای دانشجویان ایرانی — NEU، CIU و EMU</p>
+        </div>
+        <div class="wcard" style="--wc:#c9a84c;--wb:rgba(201,168,76,.35);--wg:rgba(201,168,76,.08)" data-goto="lab">
+          <div class="wcard-top"><span class="wcard-num">۰۴</span><span class="wcard-arr">←</span></div>
+          <div class="wcard-icon">⚡</div>
+          <h3 class="wcard-name">نوآوری</h3>
+          <p class="wcard-desc">اختراعات و ایده‌های جدید — از سیستم دفاع هوشمند جنگل تا دندان‌پزشکی رباتیک</p>
+        </div>
+        <div class="wcard" style="--wc:#d4a8a8;--wb:rgba(212,168,168,.4);--wg:rgba(212,168,168,.08)" data-goto="writing">
+          <div class="wcard-top"><span class="wcard-num">۰۵</span><span class="wcard-arr">←</span></div>
+          <div class="wcard-icon">✍️</div>
+          <h3 class="wcard-name">نوشته‌ها</h3>
+          <p class="wcard-desc">تحلیل‌های بازار، مقالات دندان‌پزشکی و دیدگاه‌های شخصی</p>
+        </div>
+      </div>
+      <div class="wrap hub-contact">
+        <div>
+          <h3>بیایید با هم <em>صحبت کنیم.</em></h3>
+          <p style="color:var(--tx-d);margin-top:8px">برای همکاری، پرسش‌های عمومی و راهنمایی تحصیلی</p>
+        </div>
+        <button class="btn-teal" data-goto="iletisim">تماس بگیرید</button>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p>© ۲۰۲۶ دکتر امید خیرخواه · تمام حقوق محفوظ است</p>
+    <div class="footer-logo">fa.omidkheirkhah.com</div>
+    <div class="footer-links">
+      <a href="mailto:omid@omidkheirkhah.com">omid@omidkheirkhah.com</a>
+    </div>
+  </footer>
+</section>
+
+<!-- DENTAL -->
+<section id="dental" class="scene">
+  <div class="dental-hero">
+    <div class="wrap">
+      <div class="dental-back" data-goto="hub">→ بازگشت</div>
+      <h1 class="d-h">
+        <span class="ln"><span>دندان‌پزشکی،</span></span>
+        <span class="ln"><span>یک <em>هنر است.</em></span></span>
+      </h1>
+      <p class="d-lead">پیشگیری و تشخیص زودهنگام می‌توانند از بسیاری از مشکلات دهان و دندان بکاهند. هدف من ارائه آموزش علمی، روشن و قابل‌فهم است.</p>
+      <div class="d-cta"><button class="btn-teal" data-goto="kesifet" data-cat="saglik">مشاهده مقالات دندان‌پزشکی</button></div>
+    </div>
+  </div>
+  <div class="dental-content">
+    <div class="wrap dental-grid">
+      <div class="dental-card"><h3>🦷 پیشگیری</h3><p>عادت‌های درست روزانه و بررسی به‌موقع، خطر بسیاری از بیماری‌های دهان و دندان را کاهش می‌دهند</p></div>
+      <div class="dental-card"><h3>🔬 علمی و مستند</h3><p>مطالب سلامت با اتکا به راهنماهای حرفه‌ای و منابع علمی معتبر تهیه و بازبینی شده‌اند</p></div>
+      <div class="dental-card"><h3>💡 ساده و کاربردی</h3><p>پزشکی پیچیده را به زبان ساده توضیح می‌دهم</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- TRADING -->
+<section id="trading" class="scene">
+  <div class="wrap trading-hero">
+    <div class="dental-back" data-goto="hub">→ بازگشت</div>
+    <h1 class="t-h">ترید و <em>سرمایه‌گذاری</em></h1>
+    <p class="t-lead">شش سال تجربه در بازارهای جهانی — طلا، فارکس و کریپتو. تحلیل ماکرو، تکنیکال و مدیریت ریسک.</p>
+    <div class="trading-cards">
+      <div class="t-card"><h3>طلا (XAU/USD)</h3><p>تحلیل روزانه و هفتگی طلا با رویکرد ماکرو + تکنیکال</p></div>
+      <div class="t-card"><h3>فارکس و شاخص‌ها</h3><p>Dow Jones، Nasdaq، جفت‌ارزهای اصلی</p></div>
+      <div class="t-card"><h3>بیت‌کوین</h3><p>تحلیل بازار کریپتو با دیدگاه واقع‌بینانه</p></div>
+      <div class="t-card"><h3>مدیریت ریسک</h3><p>زمان درست، حجم درست، تصمیم مطمئن</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- UNIVERSITIES -->
+<section id="universiteler" class="scene">
+  <div class="uni-hero">
+    <div class="wrap">
+      <div class="dental-back" data-goto="hub">→ بازگشت</div>
+      <h1 class="u-h">تحصیل در <em>قبرس شمالی</em></h1>
+      <p class="u-lead">قبرس شمالی برای برخی دانشجویان ایرانی می‌تواند گزینه‌ای قابل‌بررسی باشد. پیش از انتخاب، باید اعتبار دقیق رشته، هزینه نهایی، زبان آموزش و شرایط معادل‌سازی مدرک در کشور مقصد بررسی شود.</p>
+    </div>
+  </div>
+  <div class="uni-why">
+    <div class="wrap">
+      <p class="s-label">چرا قبرس شمالی؟</p>
+      <div class="why-grid">
+        <div class="why-card"><h4>🌍 موقعیت جغرافیایی</h4><p>دروازه‌ی اروپا — در قلب مدیترانه، نزدیک به ایران</p></div>
+        <div class="why-card"><h4>💰 هزینه معقول</h4><p>شهریه و هزینه زندگی به مراتب کمتر از اروپا و کانادا</p></div>
+        <div class="why-card"><h4>🎓 اعتبار رشته‌محور</h4><p>اعتبار و معادل‌سازی باید برای هر دانشگاه، رشته و کشور مقصد جداگانه بررسی شود</p></div>
+        <div class="why-card"><h4>🏠 مسیر پذیرش</h4><p>شرایط پذیرش بسته به دانشگاه، رشته، مقطع و سوابق متقاضی متفاوت است</p></div>
+        <div class="why-card"><h4>☀️ آب‌وهوای بهشتی</h4><p>۳۰۰ روز آفتاب در سال، ساحل و کیفیت زندگی بالا</p></div>
+        <div class="why-card"><h4>👨‍👩‍👧 جامعه ایرانی</h4><p>جامعه بزرگ ایرانی در دانشگاه‌ها و شهر</p></div>
+      </div>
+    </div>
+  </div>
+  <div class="uni-list">
+    <div class="wrap">
+      <p class="s-label">دانشگاه‌های برتر</p>
+      <div class="uni-card">
+        <div class="uni-card-badge">NEU</div>
+        <div class="uni-card-body">
+          <div class="uni-sub">Near East University · دانشگاه خاورنزدیک</div>
+          <h3>بزرگ‌ترین دانشگاه قبرس شمالی</h3>
+          <p>NEU دانشگاهی چندرشته‌ای در نیکوزیای شمالی است و بیمارستان آموزشی و طیفی از رشته‌های علوم سلامت، مهندسی و علوم انسانی دارد. رتبه‌بندی، اعتبار حرفه‌ای و شرایط بورسیه هر برنامه باید در زمان درخواست بررسی شود.</p>
+          <div class="uni-tags">
+            <span class="uni-tag">پزشکی</span>
+            <span class="uni-tag">دندان‌پزشکی</span>
+            <span class="uni-tag">مهندسی</span>
+            <span class="uni-tag">حقوق</span>
+            <span class="uni-tag">MBA</span>
+            <span class="uni-tag">بورسیه دارد</span>
+          </div>
+        </div>
+      </div>
+      <div class="uni-card">
+        <div class="uni-card-badge">CIU</div>
+        <div class="uni-card-body">
+          <div class="uni-sub">Cyprus International University · دانشگاه بین‌المللی قبرس</div>
+          <h3>دانشگاه بین‌المللی با محیط چندفرهنگی</h3>
+          <p>CIU با محیط بین‌المللی پویا و برنامه‌های آموزشی متنوع، گزینه‌ای عالی برای دانشجویانی است که به دنبال تجربه جهانی هستند.</p>
+          <div class="uni-tags">
+            <span class="uni-tag">کسب‌وکار</span>
+            <span class="uni-tag">رایانه</span>
+            <span class="uni-tag">روان‌شناسی</span>
+            <span class="uni-tag">ارتباطات</span>
+            <span class="uni-tag">بورسیه دارد</span>
+          </div>
+        </div>
+      </div>
+      <div class="uni-card">
+        <div class="uni-card-badge">EMU</div>
+        <div class="uni-card-body">
+          <div class="uni-sub">Eastern Mediterranean University · دانشگاه مدیترانه شرقی</div>
+          <h3>دانشگاه دولتی با اعتبار ۵۰ ساله</h3>
+          <p>EMU به‌عنوان قدیمی‌ترین دانشگاه قبرس شمالی، دارای سابقه طولانی در تحقیقات آکادمیک و روابط بین‌المللی قوی است.</p>
+          <div class="uni-tags">
+            <span class="uni-tag">معماری</span>
+            <span class="uni-tag">مهندسی</span>
+            <span class="uni-tag">علوم</span>
+            <span class="uni-tag">هنر</span>
+            <span class="uni-tag">دولتی</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- فرم مشاوره -->
+      <div class="uni-cta-box">
+        <h3>راهنمایی اولیه تحصیل در قبرس شمالی</h3>
+        <p>برای بررسی اولیه دانشگاه، رشته و مراحل پذیرش می‌توانید از طریق ایمیل در تماس باشید. تصمیم نهایی را پس از استعلام مستقیم شرایط و اعتبار برنامه از دانشگاه و مراجع کشور مقصد بگیرید.</p>
+        <form class="uni-form" action="mailto:omid@omidkheirkhah.com" method="GET">
+          <input class="full" type="text" name="name" placeholder="نام و نام خانوادگی" required/>
+          <input type="email" name="email" placeholder="ایمیل" required/>
+          <input type="tel" name="phone" placeholder="شماره تماس (واتساپ)"/>
+          <select name="university" class="full" style="padding:12px 16px;background:var(--dk3);border:1px solid rgba(232,224,208,.15);color:var(--tx);font-family:'Vazirmatn',sans-serif;font-size:.85rem;direction:rtl">
+            <option value="">انتخاب دانشگاه مورد نظر</option>
+            <option value="NEU">NEU - دانشگاه خاورنزدیک</option>
+            <option value="CIU">CIU - دانشگاه بین‌المللی قبرس</option>
+            <option value="EMU">EMU - دانشگاه مدیترانه شرقی</option>
+            <option value="unsure">هنوز مطمئن نیستم</option>
+          </select>
+          <select name="field" style="padding:12px 16px;background:var(--dk3);border:1px solid rgba(232,224,208,.15);color:var(--tx);font-family:'Vazirmatn',sans-serif;font-size:.85rem;direction:rtl">
+            <option value="">رشته مورد نظر</option>
+            <option>پزشکی</option>
+            <option>دندان‌پزشکی</option>
+            <option>مهندسی</option>
+            <option>کسب‌وکار / MBA</option>
+            <option>حقوق</option>
+            <option>سایر</option>
+          </select>
+          <textarea class="full" name="message" placeholder="سؤالات یا توضیحات بیشتر..." rows="3" style="padding:12px 16px;background:var(--dk3);border:1px solid rgba(232,224,208,.15);color:var(--tx);font-family:'Vazirmatn',sans-serif;font-size:.85rem;resize:vertical;direction:rtl"></textarea>
+          <button type="submit" class="full" style="padding:16px;background:var(--gold);color:var(--dk);font-family:'Vazirmatn',sans-serif;font-size:.9rem;font-weight:500;border:none;cursor:pointer">ارسال درخواست از طریق ایمیل ←</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="benkimim" class="scene">
+  <div class="wrap bk-wrap">
+    <div class="bk-grid">
+      <div>
+        <p class="bk-eyebrow">درباره من</p>
+        <h1 class="bk-h">زندگی در چند<br><em>دنیای موازی.</em></h1>
+        <p class="bk-lead">«به ریشه نگاه می‌کنم، نه به شاخه. کسی که منطق ریشه را بفهمد، شاخه خودبه‌خود برایش روشن می‌شود.»</p>
+        <p class="bk-text">متولد ۱۳۷۰ در تبریز. از کودکی همین سؤال در ذهنم بود: اندیشمندان بزرگ تاریخ چطور توانستند در حوزه‌های کاملاً متفاوت عمیق شوند؟ با گذشت زمان فهمیدم: <em>سیستم‌ها هر چقدر پیچیده به نظر برسند، در اصل ساده‌اند.</em></p>
+        <p class="bk-text">در ۱۳۸۹ وارد رشته مهندسی عمران شدم. مهندسی تفکر تحلیلی و حل مسئله سیستماتیک را به من یاد داد. در مرحله پایان‌نامه کارشناسی ارشد، به صدای درونم گوش دادم و از صفر وارد دندان‌پزشکی شدم. دو رشته کاملاً متفاوت — اما هر دو همان سؤال را می‌پرسیدند: <em>سیستم‌ها چطور کار می‌کنند؟</em></p>
+        <p class="bk-text">در سال ۱۳۹۶ تحصیل دندان‌پزشکی را آغاز کردم و در ۱۴۰۱ فارغ‌التحصیل شدم. همان سال برنامه دکترا در جراحی دهان و فک و صورت را شروع کردم — که هنوز ادامه دارد.</p>
+        <p class="bk-text">در سال ۱۳۹۹، وقتی همه‌گیری کرونا همه‌ی درها را بست، از خودم پرسیدم: «اگر بیرون نمی‌شود کار کرد، چطور کار را بیاورم داخل؟» این‌طور بود که با ترید آشنا شدم. حالا شش سال است در بازارهای طلا، فارکس، شاخص‌ها و کریپتو فعالم.</p>
+        <div class="bk-philo">
+          <p>«باز کردن پوزیشن یا کسب سود از بازار مهم نیست؛ در چه مدتی چقدر سود می‌گیرم برایم مهم‌تر است. زمان درست، حجم درست و تصمیم مطمئن.»</p>
+          <span>— دکتر امید خیرخواه</span>
+        </div>
+        <p class="bk-text" style="font-size:.8rem;color:var(--tx-d)">📍 ترکیه · ایران · قبرس</p>
+      </div>
+      <div>
+        <div class="timeline">
+          <div class="tl-item">
+            <div class="tl-year">۱۳۹۹–</div>
+            <div class="tl-c"><h4>ترید فعال</h4><p>طلا، Dow Jones، Nasdaq و بازار کریپتو. تحلیل ماکرو + تکنیکال.</p></div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-year">۱۴۰۱–</div>
+            <div class="tl-c"><h4>دکترای جراحی دهان</h4><p>برنامه دکترا در قبرس شمالی. ادامه دارد.</p></div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-year">۱۳۹۶–۱۴۰۱</div>
+            <div class="tl-c"><h4>دندان‌پزشکی</h4><p>فارغ‌التحصیل دندان‌پزشکی. رویکرد پیشگیری‌محور و آموزش بیمار.</p></div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-year">۱۳۹۶–</div>
+            <div class="tl-c"><h4>نماینده دانشگاه‌های KKTC</h4><p>نماینده رسمی NEU، CIU و EMU. راهنمایی صدها دانشجوی ایرانی.</p></div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-year">۱۳۸۹–</div>
+            <div class="tl-c"><h4>مهندسی عمران</h4><p>سازه و استاتیک. پایه تفکر تحلیلی.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="iletisim" class="scene">
+  <div class="wrap iletisim-wrap">
+    <div class="iletisim-grid">
+      <div>
+        <p class="ct-eyebrow">تماس</p>
+        <h2>شما را <em>می‌شنوم.</em></h2>
+        <p>مشاوره دندان‌پزشکی، تحصیل در قبرس، ترید یا هر موضوع دیگری.</p>
+        <p class="ct-direct">سریع‌ترین راه ارتباط، ایمیل شخصی من است.</p>
+        <div class="contact-links">
+          <a href="mailto:omid@omidkheirkhah.com" class="cl">
+            <div class="cl-icon">✉️</div>
+            <div><div class="cl-text">ایمیل</div><div class="cl-val">omid@omidkheirkhah.com</div></div>
+          </a>
+          <a href="https://t.me/GoldPulse_Trading" target="_blank" class="cl">
+            <div class="cl-icon">✈️</div>
+            <div><div class="cl-text">تلگرام</div><div class="cl-val">@GoldPulse_Trading</div></div>
+          </a>
+          <a href="https://instagram.com/Dr.omid_kheirkhah" target="_blank" class="cl">
+            <div class="cl-icon">📷</div>
+            <div><div class="cl-text">اینستاگرام</div><div class="cl-val">@Dr.omid_kheirkhah</div></div>
+          </a>
+        </div>
+      </div>
+      <div>
+        <form class="contact-form" action="mailto:omid@omidkheirkhah.com" method="GET">
+          <div class="cf-row">
+            <div class="cf-field"><label>نام</label><input type="text" name="name" placeholder="نام شما" required/></div>
+            <div class="cf-field"><label>ایمیل</label><input type="email" name="email" placeholder="ایمیل شما" required/></div>
+          </div>
+          <div class="cf-field"><label>موضوع</label>
+            <select name="subject" style="width:100%;padding:12px 16px;background:var(--dk3);border:1px solid rgba(232,224,208,.12);color:var(--tx);font-family:'Vazirmatn',sans-serif;direction:rtl">
+              <option>مشاوره تحصیل در قبرس</option>
+              <option>مشاوره دندان‌پزشکی</option>
+              <option>ترید و سرمایه‌گذاری</option>
+              <option>سایر</option>
+            </select>
+          </div>
+          <div class="cf-field"><label>پیام</label><textarea name="message" placeholder="پیام شما..." required></textarea></div>
+          <button type="submit" class="cf-submit">ارسال از طریق ایمیل ←</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ARTICLES -->
+<section id="kesifet" class="scene">
+  <div class="wrap kesifet-wrap">
+    <p class="s-label">مقالات</p>
+    <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4vw,4rem);font-weight:300;margin-bottom:16px">مقالات علمی دندان‌پزشکی</h2>
+    <p style="color:var(--tx-d);margin-bottom:40px;font-size:.9rem">بر اساس منابع معتبر PubMed، ADA، EFP و WHO</p>
+    <div class="art-filters">
+      <div class="art-filter active" data-cat="all" onclick="filterArt('all',this)">همه</div>
+      <div class="art-filter" data-cat="dental" onclick="filterArt('dental',this)">دندان‌پزشکی</div>
+      <div class="art-filter" data-cat="trade" onclick="filterArt('trade',this)">ترید و بازار</div>
+    </div>
+    <div class="art-grid">
+      <div class="art-row" data-cat="trade" onclick="location.href='makale-trade-cist.html'"><div class="art-cat">ترید · مبانی</div><h3 class="art-title">ترید چیست؟ راهنمای شروع</h3><div class="art-meta">📖 ۷ دقیقه</div></div>
+      <div class="art-row" data-cat="trade" onclick="location.href='makale-para-khalq.html'"><div class="art-cat">ترید · اقتصاد کلان</div><h3 class="art-title">پول چطور خلق می‌شود؟</h3><div class="art-meta">📖 ۸ دقیقه</div></div>
+      <div class="art-row" data-cat="trade" onclick="location.href='makale-bazigaran-bazar.html'"><div class="art-cat">ترید · ساختار بازار</div><h3 class="art-title">بازیگران بازار کیستند؟</h3><div class="art-meta">📖 ۷ دقیقه</div></div>
+      <div class="art-row" data-cat="trade" onclick="location.href='makale-modiriat-risk.html'"><div class="art-cat">ترید · مدیریت ریسک</div><h3 class="art-title">مدیریت ریسک: مهم‌ترین مهارت</h3><div class="art-meta">📖 ۸ دقیقه</div></div>
+      <div class="art-row" data-cat="trade" onclick="location.href='makale-ravanshenasi-trade.html'"><div class="art-cat">ترید · روان‌شناسی</div><h3 class="art-title">روان‌شناسی ترید: نبرد درونی</h3><div class="art-meta">📖 ۸ دقیقه</div></div>
+      <div class="art-row" data-cat="trade" onclick="location.href='makale-hemayat-moghavemat.html'"><div class="art-cat">ترید · تحلیل تکنیکال</div><h3 class="art-title">حمایت و مقاومت: ستون تحلیل تکنیکال</h3><div class="art-meta">📖 ۷ دقیقه</div></div>
+      <div class="art-row" data-cat="trade" onclick="location.href='makale-tahlil-rond.html'"><div class="art-cat">ترید · تحلیل تکنیکال</div><h3 class="art-title">تحلیل روند: روند دوست توست</h3><div class="art-meta">📖 ۶ دقیقه</div></div>
+      <div class="art-row" data-cat="trade" onclick="location.href='makale-fibonacci.html'"><div class="art-cat">ترید · تحلیل تکنیکال</div><h3 class="art-title">فیبوناچی: نسبت طلایی بازار</h3><div class="art-meta">📖 ۷ دقیقه</div></div>
+      <div class="art-row" data-cat="trade" onclick="location.href='makale-candle-algoha.html'"><div class="art-cat">ترید · تحلیل تکنیکال</div><h3 class="art-title">الگوهای کندل: زبان بازار</h3><div class="art-meta">📖 ۸ دقیقه</div></div>
+      <div class="art-row" data-cat="trade" onclick="location.href='makale-price-action.html'"><div class="art-cat">ترید · تحلیل تکنیکال</div><h3 class="art-title">پرایس اکشن: خواندن بازار خام</h3><div class="art-meta">📖 ۷ دقیقه</div></div>
+      <div class="art-row" data-cat="trade" onclick="location.href='makale-rsi.html'"><div class="art-cat">ترید · اندیکاتورها</div><h3 class="art-title">RSI: سنجش قدرت بازار</h3><div class="art-meta">📖 ۷ دقیقه</div></div>
+      <div class="art-row" data-cat="trade" onclick="location.href='makale-macd.html'"><div class="art-cat">ترید · اندیکاتورها</div><h3 class="art-title">MACD: شتاب و روند در یک ابزار</h3><div class="art-meta">📖 ۷ دقیقه</div></div>
+      <div class="art-row" data-cat="trade" onclick="location.href='makale-moving-average.html'"><div class="art-cat">ترید · اندیکاتورها</div><h3 class="art-title">میانگین متحرک: قلب تحلیل تکنیکال</h3><div class="art-meta">📖 ۶ دقیقه</div></div>
+      <div class="art-row" data-cat="trade" onclick="location.href='makale-bollinger.html'"><div class="art-cat">ترید · اندیکاتورها</div><h3 class="art-title">باندهای بولینگر: سنجش نوسان</h3><div class="art-meta">📖 ۷ دقیقه</div></div>
+      <div class="art-row" data-cat="trade" onclick="location.href='makale-atr.html'"><div class="art-cat">ترید · اندیکاتورها</div><h3 class="art-title">ATR: اندازه‌گیری نوسان واقعی</h3><div class="art-meta">📖 ۶ دقیقه</div></div>
+      <div class="art-row" data-cat="trade" onclick="location.href='makale-tavarrom.html'"><div class="art-cat">ترید · اقتصاد کلان</div><h3 class="art-title">تورم: دشمن خاموش پول</h3><div class="art-meta">📖 ۷ دقیقه</div></div>
+      <div class="art-row" data-cat="trade" onclick="location.href='makale-nerkh-bahre.html'"><div class="art-cat">ترید · اقتصاد کلان</div><h3 class="art-title">نرخ بهره: اهرم قدرت بانک مرکزی</h3><div class="art-meta">📖 ۸ دقیقه</div></div>
+      <div class="art-row" data-cat="trade" onclick="location.href='makale-rokood.html'"><div class="art-cat">ترید · اقتصاد کلان</div><h3 class="art-title">رکود اقتصادی: چرخه‌ای اجتناب‌ناپذیر</h3><div class="art-meta">📖 ۷ دقیقه</div></div>
+      <div class="art-row" data-cat="trade" onclick="location.href='makale-risk-on-off.html'"><div class="art-cat">ترید · اقتصاد کلان</div><h3 class="art-title">Risk On / Risk Off: نبض احساسات بازار</h3><div class="art-meta">📖 ۶ دقیقه</div></div>
+      <div class="art-row" data-cat="trade" onclick="location.href='makale-tahlil-tala.html'"><div class="art-cat">ترید · طلا</div><h3 class="art-title">تحلیل طلا: پادشاه فلزات</h3><div class="art-meta">📖 ۸ دقیقه</div></div>
+      <div class="art-row" data-cat="trade" onclick="location.href='makale-bitcoin.html'"><div class="art-cat">ترید · کریپتو</div><h3 class="art-title">بیت‌کوین: طلای دیجیتال یا حباب؟</h3><div class="art-meta">📖 ۸ دقیقه</div></div>
+      <div class="art-row" data-cat="trade" onclick="location.href='makale-dow-nasdaq.html'"><div class="art-cat">ترید · شاخص‌ها</div><h3 class="art-title">داو جونز و نزدک: قلب بازار سهام آمریکا</h3><div class="art-meta">📖 ۷ دقیقه</div></div>
+      <div class="art-row" data-cat="trade" onclick="location.href='makale-ahrom.html'"><div class="art-cat">ترید · پیشرفته</div><h3 class="art-title">اهرم: شمشیر دولبه ترید</h3><div class="art-meta">📖 ۷ دقیقه</div></div>
+      <div class="art-row" data-cat="trade" onclick="location.href='makale-broker-entekhab.html'"><div class="art-cat">ترید · پیشرفته</div><h3 class="art-title">انتخاب بروکر: شریک یا دشمن؟</h3><div class="art-meta">📖 ۷ دقیقه</div></div>
+      <div class="art-row" data-cat="trade" onclick="location.href='makale-stop-hunt.html'"><div class="art-cat">ترید · پیشرفته</div><h3 class="art-title">Stop Hunt: شکار استاپ‌ها</h3><div class="art-meta">📖 ۷ دقیقه</div></div>
+      <div class="art-row" data-cat="trade" onclick="location.href='makale-arze-taghaza.html'"><div class="art-cat">ترید · پیشرفته</div><h3 class="art-title">عرضه و تقاضا: ریشه همه حرکات</h3><div class="art-meta">📖 ۷ دقیقه</div></div>
+      <div class="art-row" data-cat="trade" onclick="location.href='makale-smart-money.html'"><div class="art-cat">ترید · پیشرفته</div><h3 class="art-title">پول هوشمند: ردپای غول‌ها</h3><div class="art-meta">📖 ۸ دقیقه</div></div>
+      <div class="art-row" data-cat="dental" onclick="location.href='makale-dis-curugu.html'"><div class="art-cat">سلامت دندان · پوسیدگی</div><h3 class="art-title">پوسیدگی دندان: آنچه باید بدانید</h3><div class="art-meta">📖 ۷ دقیقه</div></div>
+      <div class="art-row" data-cat="dental" onclick="location.href='makale-dis-firca.html'"><div class="art-cat">سلامت دندان · بهداشت</div><h3 class="art-title">مسواک زدن صحیح: تکنیک درست چیست؟</h3><div class="art-meta">📖 ۶ دقیقه</div></div>
+      <div class="art-row" data-cat="dental" onclick="location.href='makale-nakh-dishan.html'"><div class="art-cat">سلامت دندان · بهداشت</div><h3 class="art-title">نخ دندان: چرا نمی‌توان از آن صرف‌نظر کرد</h3><div class="art-meta">📖 ۶ دقیقه</div></div>
+      <div class="art-row" data-cat="dental" onclick="location.href='makale-dis-hassasiyeti.html'"><div class="art-cat">سلامت دندان · حساسیت</div><h3 class="art-title">حساسیت دندان: علت‌ها و راه‌حل‌ها</h3><div class="art-meta">📖 ۷ دقیقه</div></div>
+      <div class="art-row" data-cat="dental" onclick="location.href='makale-dis-eti.html'"><div class="art-cat">سلامت دندان · لثه</div><h3 class="art-title">بیماری لثه: تهدید پنهان</h3><div class="art-meta">📖 ۸ دقیقه</div></div>
+      <div class="art-row" data-cat="dental" onclick="location.href='makale-dis-apsesi.html'"><div class="art-cat">سلامت دندان · اورژانس</div><h3 class="art-title">آبسه دندانی: فوری است یا نه؟</h3><div class="art-meta">📖 ۸ دقیقه</div></div>
+      <div class="art-row" data-cat="dental" onclick="location.href='makale-canal-tedavisi.html'"><div class="art-cat">سلامت دندان · درمان</div><h3 class="art-title">عصب‌کشی دندان: نترسید</h3><div class="art-meta">📖 ۷ دقیقه</div></div>
+      <div class="art-row" data-cat="dental" onclick="location.href='makale-implant.html'"><div class="art-cat">سلامت دندان · درمان</div><h3 class="art-title">ایمپلنت یا پل دندانی؟</h3><div class="art-meta">📖 ۸ دقیقه</div></div>
+      <div class="art-row" data-cat="dental" onclick="location.href='makale-ortodonti.html'"><div class="art-cat">سلامت دندان · ارتودنسی</div><h3 class="art-title">ارتودنسی: سیم یا پلاک شفاف؟</h3><div class="art-meta">📖 ۷ دقیقه</div></div>
+      <div class="art-row" data-cat="dental" onclick="location.href='makale-dis-beyazlatma.html'"><div class="art-cat">سلامت دندان · زیبایی</div><h3 class="art-title">سفیدکردن دندان: علم چه می‌گوید؟</h3><div class="art-meta">📖 ۷ دقیقه</div></div>
+      <div class="art-row" data-cat="dental" onclick="location.href='makale-bavbad-dahan.html'"><div class="art-cat">سلامت دندان · بوی دهان</div><h3 class="art-title">بوی بد دهان: علت‌ها و درمان</h3><div class="art-meta">📖 ۷ دقیقه</div></div>
+      <div class="art-row" data-cat="dental" onclick="location.href='makale-khoshki-dahan.html'"><div class="art-cat">سلامت دندان · بزاق</div><h3 class="art-title">خشکی دهان: بیش از یک ناراحتی</h3><div class="art-meta">📖 ۶ دقیقه</div></div>
+      <div class="art-row" data-cat="dental" onclick="location.href='makale-bruksizm.html'"><div class="art-cat">سلامت دندان · بروکسیسم</div><h3 class="art-title">دندان‌قروچه: دشمن شبانه دندان‌ها</h3><div class="art-meta">📖 ۷ دقیقه</div></div>
+      <div class="art-row" data-cat="dental" onclick="location.href='makale-dandan-aghl.html'"><div class="art-cat">سلامت دندان · جراحی</div><h3 class="art-title">دندان عقل: بکشیم یا نگه داریم؟</h3><div class="art-meta">📖 ۷ دقیقه</div></div>
+      <div class="art-row" data-cat="dental" onclick="location.href='makale-anva-dandandard.html'"><div class="art-cat">سلامت دندان · درد</div><h3 class="art-title">انواع دندان‌درد: زبان درد را بفهمیم</h3><div class="art-meta">📖 ۷ دقیقه</div></div>
+      <div class="art-row" data-cat="dental" onclick="location.href='makale-khonrizi-lase.html'"><div class="art-cat">سلامت دندان · لثه</div><h3 class="art-title">خونریزی لثه: زنگ خطری جدی</h3><div class="art-meta">📖 ۶ دقیقه</div></div>
+      <div class="art-row" data-cat="dental" onclick="location.href='makale-aghabneshini-lase.html'"><div class="art-cat">سلامت دندان · لثه</div><h3 class="art-title">عقب‌نشینی لثه: وقتی ریشه آشکار می‌شود</h3><div class="art-meta">📖 ۷ دقیقه</div></div>
+      <div class="art-row" data-cat="dental" onclick="location.href='makale-entekhab-khamir.html'"><div class="art-cat">سلامت دندان · بهداشت</div><h3 class="art-title">انتخاب خمیردندان: کدام برای شما؟</h3><div class="art-meta">📖 ۶ دقیقه</div></div>
+      <div class="art-row" data-cat="dental" onclick="location.href='makale-zarbe-dandan.html'"><div class="art-cat">سلامت دندان · اورژانس</div><h3 class="art-title">ضربه به دندان: اقدامات فوری</h3><div class="art-meta">📖 ۷ دقیقه</div></div>
+      <div class="art-row" data-cat="dental" onclick="location.href='makale-anva-porkardegi.html'"><div class="art-cat">سلامت دندان · درمان</div><h3 class="art-title">انواع پرکردگی: کدام بهتر است؟</h3><div class="art-meta">📖 ۷ دقیقه</div></div>
+      <div class="art-row" data-cat="dental" onclick="location.href='makale-fisor-silant.html'"><div class="art-cat">سلامت دندان · پیشگیری</div><h3 class="art-title">فیشورسیلانت: سپر محافظ دندان کودکان</h3><div class="art-meta">📖 ۶ دقیقه</div></div>
+      <div class="art-row" data-cat="dental" onclick="location.href='makale-florayd.html'"><div class="art-cat">سلامت دندان · پیشگیری</div><h3 class="art-title">فلوراید: سپر مینای دندان</h3><div class="art-meta">📖 ۷ دقیقه</div></div>
+      <div class="art-row" data-cat="dental" onclick="location.href='makale-dahanshooye.html'"><div class="art-cat">سلامت دندان · بهداشت</div><h3 class="art-title">دهانشویه: لازم است یا تجملاتی؟</h3><div class="art-meta">📖 ۶ دقیقه</div></div>
+      <div class="art-row" data-cat="dental" onclick="location.href='makale-bardari-dandan.html'"><div class="art-cat">سلامت دندان · بارداری</div><h3 class="art-title">بارداری و سلامت دندان: مراقبت دوگانه</h3><div class="art-meta">📖 ۷ دقیقه</div></div>
+      <div class="art-row" data-cat="dental" onclick="location.href='makale-diabet-dandan.html'"><div class="art-cat">سلامت دندان · بیماری سیستمیک</div><h3 class="art-title">دیابت و دندان: رابطه دوطرفه</h3><div class="art-meta">📖 ۷ دقیقه</div></div>
+      <div class="art-row" data-cat="dental" onclick="location.href='makale-ghalb-dandan.html'"><div class="art-cat">سلامت دندان · بیماری سیستمیک</div><h3 class="art-title">قلب و سلامت دندان: ارتباط پنهان</h3><div class="art-meta">📖 ۷ دقیقه</div></div>
+      <div class="art-row" data-cat="dental" onclick="location.href='makale-ghand-dandan.html'"><div class="art-cat">سلامت دندان · تغذیه</div><h3 class="art-title">قند و دندان: حقیقت شیرین و تلخ</h3><div class="art-meta">📖 ۶ دقیقه</div></div>
+      <div class="art-row" data-cat="dental" onclick="location.href='makale-sigar-dahan.html'"><div class="art-cat">سلامت دندان · سبک زندگی</div><h3 class="art-title">سیگار و سلامت دهان: فراتر از زردی دندان</h3><div class="art-meta">📖 ۷ دقیقه</div></div>
+      <div class="art-row" data-cat="dental" onclick="location.href='makale-estres-dandan.html'"><div class="art-cat">سلامت دندان · سبک زندگی</div><h3 class="art-title">استرس و دندان: تأثیر ذهن بر دهان</h3><div class="art-meta">📖 ۶ دقیقه</div></div>
+      <div class="art-row" data-cat="dental" onclick="location.href='makale-mafsal-fak.html'"><div class="art-cat">سلامت دندان · مفصل فک</div><h3 class="art-title">مفصل فک (TMJ): وقتی فک درد می‌گیرد</h3><div class="art-meta">📖 ۷ دقیقه</div></div>
+      <div class="art-row" data-cat="dental" onclick="location.href='makale-dandan-koodakan.html'"><div class="art-cat">سلامت دندان · کودکان</div><h3 class="art-title">دندان کودکان: پایه‌ای برای یک عمر</h3><div class="art-meta">📖 ۷ دقیقه</div></div>
+      <div class="art-row" data-cat="dental" onclick="location.href='makale-salmandi-dandan.html'"><div class="art-cat">سلامت دندان · سالمندی</div><h3 class="art-title">سالمندی و دندان: حفظ لبخند در طول عمر</h3><div class="art-meta">📖 ۷ دقیقه</div></div>
+      <div class="art-row" data-cat="dental" onclick="location.href='makale-saratan-dahan.html'"><div class="art-cat">سلامت دندان · سرطان</div><h3 class="art-title">سرطان دهان: تشخیص زودهنگام نجات‌بخش است</h3><div class="art-meta">📖 ۸ دقیقه</div></div>
+      <div class="art-row" data-cat="dental" onclick="location.href='makale-apne-khab.html'"><div class="art-cat">سلامت دندان · خواب</div><h3 class="art-title">آپنه خواب و دندان: نقش دندان‌پزشک</h3><div class="art-meta">📖 ۷ دقیقه</div></div>
+      <div class="art-row" data-cat="dental" onclick="location.href='makale-microbiom-dahan.html'"><div class="art-cat">سلامت دندان · علم</div><h3 class="art-title">میکروبیوم دهان: شهر باکتری‌ها</h3><div class="art-meta">📖 ۷ دقیقه</div></div>
+      <div class="art-row" data-cat="dental" onclick="location.href='makale-darman-periodontal.html'"><div class="art-cat">سلامت دندان · لثه</div><h3 class="art-title">درمان پریودنتال: نجات لثه و دندان</h3><div class="art-meta">📖 ۷ دقیقه</div></div>
+      <div class="art-row" data-cat="dental" onclick="location.href='makale-bazsazi-mina.html'"><div class="art-cat">سلامت دندان · پیشگیری</div><h3 class="art-title">بازسازی مینا: ترمیم طبیعی دندان</h3><div class="art-meta">📖 ۶ دقیقه</div></div>
+      <div class="art-row" data-cat="dental" onclick="location.href='makale-hpv-saratan.html'"><div class="art-cat">سلامت دندان · سرطان</div><h3 class="art-title">HPV و سرطان دهان: ارتباطی که باید بدانید</h3><div class="art-meta">📖 ۷ دقیقه</div></div>
+      <div class="art-row" data-cat="dental" onclick="location.href='makale-noma.html'"><div class="art-cat">سلامت دندان · سلامت جهانی</div><h3 class="art-title">نوما: بیماری فراموش‌شده فقر</h3><div class="art-meta">📖 ۶ دقیقه</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- LAB/INNOVATION -->
+<section id="lab" class="scene">
+  <div class="wrap" style="padding:calc(var(--nav-h) + 80px) 0 80px">
+    <div class="dental-back" data-goto="hub">→ بازگشت</div>
+    <h1 style="font-family:'Cormorant Garamond',serif;font-size:clamp(2.5rem,5vw,5rem);font-weight:300;margin-bottom:24px">نوآوری و <em style="color:var(--gold)">اختراع</em></h1>
+    <p style="color:var(--tx-d);max-width:600px;line-height:1.9;margin-bottom:40px">تکنولوژی امروز برای حل هر مشکلی کافی است — فقط باید سؤال درست را بپرسیم.</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px">
+      <div style="padding:32px;border:1px solid rgba(201,168,76,.2);background:var(--dk2)">
+        <div style="font-size:2rem;margin-bottom:16px">🌲</div>
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:300;margin-bottom:12px;color:var(--gold)">سیستم سیلوان</h3>
+        <p style="font-size:.9rem;color:var(--tx-d);line-height:1.7">سیستم هوشمند دفاع خودکار در برابر آتش‌سوزی جنگل — با پهپاد، کپسول‌های بیودگرادابل و شبکه‌ی IoT</p>
+      </div>
+      <div style="padding:32px;border:1px solid rgba(143,212,238,.2);background:var(--dk2)">
+        <div style="font-size:2rem;margin-bottom:16px">🦾</div>
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:300;margin-bottom:12px;color:#8fd4ee">دندان‌پزشکی رباتیک</h3>
+        <p style="font-size:.9rem;color:var(--tx-d);line-height:1.7">مفهوم نوآورانه برای دقت بالاتر در درمان‌های دندان‌پزشکی با کمک رباتیک</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="writing" class="scene">
+  <div class="wrap" style="padding:calc(var(--nav-h) + 80px) 0 80px">
+    <div class="dental-back" data-goto="hub">→ بازگشت</div>
+    <h1 style="font-family:'Cormorant Garamond',serif;font-size:clamp(2.5rem,5vw,5rem);font-weight:300;margin-bottom:24px"><em style="color:var(--gold)">نوشته‌ها</em> و دیدگاه‌ها</h1>
+    <p style="color:var(--tx-d);max-width:600px;line-height:1.9;margin-bottom:48px">جایی برای تحلیل‌های عمیق‌تر — درباره بازار، سلامت، نوآوری و تقاطع این دنیاها. نوشتن برای من راهی برای فکر کردن است.</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px">
+      <div style="padding:32px;border:1px solid rgba(201,168,76,.2);background:var(--dk2)">
+        <div style="font-size:.6rem;letter-spacing:.25em;color:var(--gold);text-transform:uppercase;margin-bottom:12px">دندان‌پزشکی</div>
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:300;margin-bottom:10px;line-height:1.3">مقالات علمی سلامت دهان</h3>
+        <p style="font-size:.85rem;color:var(--tx-d);line-height:1.7;margin-bottom:16px">۳۹ مقاله درباره پیشگیری، درمان و سلامت دهان — همراه با منابع علمی و حرفه‌ای.</p>
+        <span style="font-size:.75rem;color:var(--gold);cursor:pointer" onclick="navigate('kesifet')">مشاهده مقالات ←</span>
+      </div>
+      <div style="padding:32px;border:1px solid rgba(201,168,76,.2);background:var(--dk2)">
+        <div style="font-size:.6rem;letter-spacing:.25em;color:var(--gold);text-transform:uppercase;margin-bottom:12px">ترید و بازار</div>
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:300;margin-bottom:10px;line-height:1.3">تحلیل طلا و بازارهای جهانی</h3>
+        <p style="font-size:.85rem;color:var(--tx-d);line-height:1.7;margin-bottom:16px">دیدگاه‌های من درباره طلا، فارکس و کریپتو — تحلیل ماکرو و تکنیکال.</p>
+        <span style="font-size:.75rem;color:var(--gold);cursor:pointer" onclick="navigate('trading')">دنیای ترید ←</span>
+      </div>
+      <div style="padding:32px;border:1px solid rgba(201,168,76,.2);background:var(--dk2)">
+        <div style="font-size:.6rem;letter-spacing:.25em;color:var(--gold);text-transform:uppercase;margin-bottom:12px">نوآوری</div>
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:300;margin-bottom:10px;line-height:1.3">ایده‌ها و اختراعات</h3>
+        <p style="font-size:.85rem;color:var(--tx-d);line-height:1.7;margin-bottom:16px">از سیستم دفاع هوشمند جنگل تا دندان‌پزشکی رباتیک — تفکر بین‌رشته‌ای.</p>
+        <span style="font-size:.75rem;color:var(--gold);cursor:pointer" onclick="navigate('lab')">دنیای نوآوری ←</span>
+      </div>
+    </div>
+    <div style="margin-top:48px;padding:32px;background:var(--gold-dim);border-right:3px solid var(--gold)">
+      <p style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;line-height:1.7;color:var(--tx)">«نوشتن، فکر کردن روی کاغذ است. وقتی چیزی را می‌نویسم، تازه می‌فهمم واقعاً چه فکری درباره‌اش دارم.»</p>
+    </div>
+  </div>
+</section>
+
+<script>
+// PARTICLES
+const pc=document.getElementById('particles');
+for(let i=0;i<28;i++){
+  const p=document.createElement('div');p.className='p';
+  p.style.cssText=`left:${Math.random()*100}%;top:${Math.random()*100}%;--dur:${6+Math.random()*14}s;--del:${Math.random()*-12}s`;
+  pc.appendChild(p);
+}
+
+// MENU
+const overlay=document.getElementById('menuOverlay');
+document.getElementById('menuBtn').onclick=()=>overlay.classList.add('open');
+document.getElementById('menuClose').onclick=()=>overlay.classList.remove('open');
+
+// NAVIGATE
+let currentScene='hub';
+function navigate(id,opts={}){
+  if(id===currentScene)return;
+  document.getElementById(currentScene).classList.remove('active');
+  currentScene=id;
+  const next=document.getElementById(id);
+  next.classList.add('active');
+  window.scrollTo(0,0);
+  overlay.classList.remove('open');
+  if(id==='hub'){initHub();}
+  history.pushState(null,'','#'+id);
+}
+
+document.querySelectorAll('[data-goto]').forEach(el=>{
+  el.addEventListener('click',()=>navigate(el.dataset.goto));
+});
+
+// HUB INIT
+function initHub(){
+  const hub=document.getElementById('hub');
+  setTimeout(()=>hub.classList.add('hub-ready'),100);
+  const cards=document.querySelectorAll('#hub .wcard');
+  const io=new IntersectionObserver(entries=>{
+    entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('in');});
+  },{threshold:.1});
+  document.querySelectorAll('#hub .worlds-head,#hub .wcard,#hub .hub-contact').forEach(el=>io.observe(el));
+  cards.forEach((c,i)=>{c.style.transitionDelay=`${i*0.13}s`;});
+  const isTouch=window.matchMedia('(hover: none)').matches;
+  if(isTouch){
+    const moIO=new IntersectionObserver(entries=>{
+      entries.forEach(e=>{
+        if(e.isIntersecting)e.target.classList.add('glow');
+        else e.target.classList.remove('glow');
+      });
+    },{rootMargin:'-40% 0px -40% 0px'});
+    cards.forEach(c=>moIO.observe(c));
+  } else {
+    if(!window._swept){
+      window._swept=true;
+      const swIO=new IntersectionObserver((entries,obs)=>{
+        entries.forEach(e=>{
+          if(e.isIntersecting){
+            obs.disconnect();
+            setTimeout(()=>{
+              cards.forEach((c,i)=>{
+                setTimeout(()=>{c.classList.add('glow');setTimeout(()=>c.classList.remove('glow'),520);},i*260);
+              });
+            },600);
+          }
+        });
+      },{threshold:.5});
+      if(cards[0])swIO.observe(cards[0]);
+    }
+  }
+}
+
+// ARTICLE FILTER
+function filterArt(cat,el){
+  document.querySelectorAll('.art-filter').forEach(f=>f.classList.remove('active'));
+  el.classList.add('active');
+  document.querySelectorAll('.art-row').forEach(r=>{
+    r.style.display=(cat==='all'||r.dataset.cat===cat)?'':'none';
+  });
+}
+
+// BOOT
+function boot(){
+  const hash=(location.hash||'').replace('#','').trim();
+  const valid=['hub','kesifet','universiteler','benkimim','iletisim','dental','trading','lab','writing'];
+  if(hash && valid.includes(hash) && hash!=='hub'){
+    document.getElementById('hub').classList.remove('active');
+    document.getElementById(hash).classList.add('active');
+    currentScene=hash;
+  } else {
+    initHub();
+  }
+}
+boot();
+</script>
+</body>
+</html>
