@@ -64,7 +64,13 @@ nav{position:fixed;top:0;right:0;left:0;z-index:200;padding:0 60px;height:var(--
 /* HUB */
 .hub-body{position:relative;z-index:2;min-height:100svh;display:flex;flex-direction:column;justify-content:center;padding-top:var(--nav-h);padding-bottom:60px;overflow:hidden}
 .hero{padding:60px 0 20px;position:relative;z-index:3}
-@media (min-width:901px){.hero{padding-left:60px}}
+@media (min-width:901px){
+  .hero{display:flex;flex-direction:column;align-items:center;max-width:760px;margin:0 auto;padding:36px 0 20px;text-align:center}
+  .hero-arch{position:relative;top:auto;left:auto;transform:none;order:-1;width:300px;height:300px;margin:0 auto 6px}
+  .hero-avatar{margin-right:auto;margin-left:auto}
+  .hero-lead{margin-right:auto;margin-left:auto}
+  .hero-stats{justify-content:center}
+}
 .hero-avatar{width:84px;height:84px;border-radius:50%;overflow:hidden;border:1px solid rgba(201,168,76,.35);margin-bottom:28px;opacity:0;transform:translateY(14px) scale(.94);transition:all 1s var(--e) .15s;box-shadow:0 0 28px rgba(201,168,76,.18)}
 .hub-ready .hero-avatar{opacity:1;transform:none}
 .hero-avatar img{width:100%;height:100%;object-fit:cover;object-position:center top}
@@ -87,7 +93,7 @@ h1.hero-h em{font-style:italic;color:var(--gold)}
 .sl{width:40px;height:1px;background:linear-gradient(to left,var(--gold),transparent)}
 
 /* HERO ARCH */
-.hero-arch{position:absolute;top:340px;left:-12%;transform:translateY(-50%);width:min(38vw,440px);height:min(38vw,440px);z-index:0;pointer-events:none;opacity:0;animation:archFade 1.6s var(--e) .8s forwards}
+.hero-arch{position:absolute;top:340px;left:0;transform:translateY(-50%);width:min(38vw,440px);height:min(38vw,440px);z-index:0;pointer-events:none;opacity:0;animation:archFade 1.6s var(--e) .8s forwards}
 @keyframes archFade{to{opacity:1}}
 .hero-arch .tooth-3d{position:absolute;inset:0;perspective:1200px}
 .hero-arch .tooth-img{width:100%;height:100%;object-fit:contain;mix-blend-mode:screen;animation:toothSpin 14s ease-in-out infinite;-webkit-mask:radial-gradient(circle at 50% 50%,#000 55%,transparent 78%);mask:radial-gradient(circle at 50% 50%,#000 55%,transparent 78%)}
