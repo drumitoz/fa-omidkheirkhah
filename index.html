@@ -64,7 +64,7 @@ nav{position:fixed;top:0;right:0;left:0;z-index:200;padding:0 60px;height:var(--
 /* HUB */
 .hub-body{position:relative;z-index:2;min-height:100svh;display:flex;flex-direction:column;justify-content:center;padding-top:var(--nav-h);padding-bottom:60px;overflow:hidden}
 .hero{padding:60px 0 20px;position:relative;z-index:3}
-@media (min-width:901px){.hero{margin-right:-60px;padding-left:60px}}
+@media (min-width:901px){.hero{padding-left:60px}}
 .hero-avatar{width:84px;height:84px;border-radius:50%;overflow:hidden;border:1px solid rgba(201,168,76,.35);margin-bottom:28px;opacity:0;transform:translateY(14px) scale(.94);transition:all 1s var(--e) .15s;box-shadow:0 0 28px rgba(201,168,76,.18)}
 .hub-ready .hero-avatar{opacity:1;transform:none}
 .hero-avatar img{width:100%;height:100%;object-fit:cover;object-position:center top}
@@ -136,6 +136,13 @@ h1.hero-h em{font-style:italic;color:var(--gold)}
 .hub-contact h3 em{font-style:italic;color:var(--gold)}
 .btn-teal{padding:14px 32px;background:transparent;border:1px solid var(--gold);color:var(--gold);font-family:'Vazirmatn',sans-serif;font-size:.8rem;letter-spacing:.15em;cursor:pointer;transition:all .3s}
 .btn-teal:hover{background:var(--gold);color:var(--dk)}
+.d-cta{display:flex;gap:14px;flex-wrap:wrap}
+.d-cta .btn-teal{background:#112d38;border-color:#112d38;color:#fff;font-weight:500}
+.d-cta .btn-teal:hover{background:#c9a84c;border-color:#c9a84c;color:#080808}
+.d-cta .btn-teal.secondary{background:transparent;border-color:#183a47;color:#183a47}
+.hub-contact-links{display:flex;flex-direction:column;gap:7px;margin-top:15px;font-size:.82rem;color:var(--tx-d)}
+.hub-contact-links a{width:max-content;max-width:100%;border-bottom:1px solid rgba(201,168,76,.22);padding-bottom:3px}
+.hub-contact-links a:hover{color:var(--gold)}
 
 /* SCENES - DENTAL */
 #dental{background:linear-gradient(180deg,#080808 0%,#16323f 18%,#3a5764 38%,#8aa3ad 58%,#cdd9de 75%,#eef4f7 90%,#eef4f7 100%)}
@@ -300,6 +307,8 @@ footer p{font-size:.7rem;color:var(--tx-d)}
 /* Persian typography: use a native Persian face instead of Latin display fallbacks. */
 h1,h2,h3,h4,.hero-h,.worlds-h,.wcard-name,.d-h,.t-h,.u-h,.bk-h,.bk-lead,.bk-philo p,.iletisim-grid h2,.art-title,.footer-logo,.stat b,.uni-card-badge,.uni-card-body h3,.t-card h3,.dental-card h3,.menu-item{font-family:'Vazirmatn',sans-serif!important;letter-spacing:0!important}
 h1,h2,h3,h4{font-weight:400!important}
+main,.scene,.hub-body,.worlds,.bk-wrap,.iletisim-wrap,.kesifet-wrap{width:100%;max-width:100vw;overflow-x:clip}
+.wrap{max-width:calc(100vw - 40px)}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
 </style>
 </head>
@@ -353,17 +362,13 @@ h1,h2,h3,h4{font-weight:400!important}
         <span class="ln"><span>نه به <em>شاخه.</em></span></span>
       </h1>
       <p class="hero-lead">دندان‌پزشکی، بازارهای مالی و نوآوری در ظاهر دنیاهای متفاوتی‌اند؛ اما هر سه با یک پرسش آغاز می‌شوند: مسئله واقعاً از کجا ریشه می‌گیرد؟ اینجا آموخته‌ها و تجربه‌هایم را شفاف، کاربردی و مستند به اشتراک می‌گذارم.</p>
-      <div class="hero-stats">
-        <div class="stat"><b>۶+</b><span>سال ترید</span></div>
-        <div class="stat"><b>∞</b><span>چشم‌انداز</span></div>
-      </div>
-      <div class="scroll-cue"><span class="sl"></span> دنیاها را کشف کنید</div>
+      <div class="hero-stats"><div class="stat"><b>۶+</b><span>سال تجربه در بازارهای مالی</span></div></div>
     </div>
 
     <div class="worlds">
       <div class="worlds-head wrap" id="worldsHead">
         <p class="s-label">چه می‌کنم، چطور فکر می‌کنم</p>
-        <h2 class="worlds-h">هر کدام یک <em>دنیای</em> جداست — همه از یک ذهن.</h2>
+        <h2 class="worlds-h">هر کدام یک <em>دنیای جداگانه</em> — همگی از یک ذهن.</h2>
       </div>
       <div class="wrap worlds-list">
         <div class="wcard" style="--wc:#8fd4ee;--wb:rgba(143,212,238,.4);--wg:rgba(143,212,238,.1)" data-goto="dental">
@@ -388,7 +393,7 @@ h1,h2,h3,h4{font-weight:400!important}
           <div class="wcard-top"><span class="wcard-num">۰۴</span><span class="wcard-arr">←</span></div>
           <div class="wcard-icon">⚡</div>
           <h3 class="wcard-name">نوآوری</h3>
-          <p class="wcard-desc">اختراعات و ایده‌های جدید — از سیستم دفاع هوشمند جنگل تا دندان‌پزشکی رباتیک</p>
+          <p class="wcard-desc">ایده‌ها و پروژه‌های نوآورانه، از سامانه هوشمند اطفای خودکار حریق تا کاربردهای رباتیک در دندان‌پزشکی</p>
         </div>
         <div class="wcard" style="--wc:#d4a8a8;--wb:rgba(212,168,168,.4);--wg:rgba(212,168,168,.08)" data-goto="writing">
           <div class="wcard-top"><span class="wcard-num">۰۵</span><span class="wcard-arr">←</span></div>
@@ -401,6 +406,11 @@ h1,h2,h3,h4{font-weight:400!important}
         <div>
           <h3>بیایید با هم <em>صحبت کنیم.</em></h3>
           <p style="color:var(--tx-d);margin-top:8px">برای همکاری، پرسش‌های عمومی و راهنمایی تحصیلی</p>
+          <div class="hub-contact-links">
+            <a href="mailto:omid@omidkheirkhah.com">ایمیل: omid@omidkheirkhah.com</a>
+            <a href="https://instagram.com/Dr.omid_kheirkhah" target="_blank">اینستاگرام: @Dr.omid_kheirkhah</a>
+            <a href="https://t.me/GoldPulse_Trading" target="_blank">تلگرام: @GoldPulse_Trading</a>
+          </div>
         </div>
         <button class="btn-teal" data-goto="iletisim">تماس بگیرید</button>
       </div>
@@ -425,7 +435,10 @@ h1,h2,h3,h4{font-weight:400!important}
         <span class="ln"><span>یک <em>هنر است.</em></span></span>
       </h1>
       <p class="d-lead">پیشگیری و تشخیص زودهنگام می‌توانند از بسیاری از مشکلات دهان و دندان بکاهند. هدف من ارائه آموزش علمی، روشن و قابل‌فهم است.</p>
-      <div class="d-cta"><button class="btn-teal" data-goto="kesifet" data-cat="dental">مشاهده مقالات دندان‌پزشکی</button></div>
+      <div class="d-cta">
+        <button class="btn-teal" data-goto="kesifet" data-cat="dental">مشاهده مقالات دندان‌پزشکی</button>
+        <button class="btn-teal secondary" data-goto="iletisim">دریافت مشاوره</button>
+      </div>
     </div>
   </div>
   <div class="dental-content">
@@ -564,15 +577,10 @@ h1,h2,h3,h4{font-weight:400!important}
       <div>
         <p class="bk-eyebrow">درباره من</p>
         <h1 class="bk-h">زندگی در چند<br><em>دنیای موازی.</em></h1>
-        <p class="bk-lead">«به ریشه نگاه می‌کنم، نه به شاخه. کسی که منطق ریشه را بفهمد، شاخه خودبه‌خود برایش روشن می‌شود.»</p>
         <p class="bk-text">متولد ۱۳۷۰ در تبریز. از کودکی همین سؤال در ذهنم بود: اندیشمندان بزرگ تاریخ چطور توانستند در حوزه‌های کاملاً متفاوت عمیق شوند؟ با گذشت زمان فهمیدم: <em>سیستم‌ها هر چقدر پیچیده به نظر برسند، در اصل ساده‌اند.</em></p>
         <p class="bk-text">در ۱۳۸۹ وارد رشته مهندسی عمران شدم. مهندسی تفکر تحلیلی و حل مسئله سیستماتیک را به من یاد داد. در مرحله پایان‌نامه کارشناسی ارشد، به صدای درونم گوش دادم و از صفر وارد دندان‌پزشکی شدم. دو رشته کاملاً متفاوت — اما هر دو همان سؤال را می‌پرسیدند: <em>سیستم‌ها چطور کار می‌کنند؟</em></p>
         <p class="bk-text">در سال ۱۳۹۶ تحصیل دندان‌پزشکی را آغاز کردم و در ۱۴۰۱ فارغ‌التحصیل شدم. همان سال برنامه دکترا در جراحی دهان و فک و صورت را شروع کردم — که هنوز ادامه دارد.</p>
-        <p class="bk-text">در سال ۱۳۹۹، وقتی همه‌گیری کرونا همه‌ی درها را بست، از خودم پرسیدم: «اگر بیرون نمی‌شود کار کرد، چطور کار را بیاورم داخل؟» این‌طور بود که با ترید آشنا شدم. حالا شش سال است در بازارهای طلا، فارکس، شاخص‌ها و کریپتو فعالم.</p>
-        <div class="bk-philo">
-          <p>«باز کردن پوزیشن یا کسب سود از بازار مهم نیست؛ در چه مدتی چقدر سود می‌گیرم برایم مهم‌تر است. زمان درست، حجم درست و تصمیم مطمئن.»</p>
-          <span>— دکتر امید خیرخواه</span>
-        </div>
+        <p class="bk-text">در سال ۱۳۹۹ و هم‌زمان با همه‌گیری کرونا، فعالیت‌های آنلاین برایم جدی‌تر شد و آشنایی من با بازارهای مالی از همان‌جا شکل گرفت. امروز با تمرکز بر طلا، فارکس، شاخص‌ها و بازار رمزارزها فعالیت می‌کنم.</p>
         <p class="bk-text" style="font-size:.8rem;color:var(--tx-d)">📍 ترکیه · ایران · قبرس</p>
       </div>
       <div>
@@ -740,8 +748,8 @@ h1,h2,h3,h4{font-weight:400!important}
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px">
       <div style="padding:32px;border:1px solid rgba(201,168,76,.2);background:var(--dk2)">
         <div style="font-size:2rem;margin-bottom:16px">🌲</div>
-        <h3 style="font-family:'Vazirmatn',sans-serif;font-size:1.5rem;font-weight:300;margin-bottom:12px;color:var(--gold)">سیستم سیلوان</h3>
-        <p style="font-size:.9rem;color:var(--tx-d);line-height:1.7">سیستم هوشمند دفاع خودکار در برابر آتش‌سوزی جنگل — با پهپاد، کپسول‌های بیودگرادابل و شبکه‌ی IoT</p>
+        <h3 style="font-family:'Vazirmatn',sans-serif;font-size:1.5rem;font-weight:300;margin-bottom:12px;color:var(--gold)">سامانه هوشمند اطفای حریق</h3>
+        <p style="font-size:.9rem;color:var(--tx-d);line-height:1.7">سامانه هوشمند اطفای خودکار حریق برای شناسایی و مهار سریع آتش‌سوزی‌های جنگلی.</p>
       </div>
       <div style="padding:32px;border:1px solid rgba(143,212,238,.2);background:var(--dk2)">
         <div style="font-size:2rem;margin-bottom:16px">🦾</div>
@@ -773,7 +781,7 @@ h1,h2,h3,h4{font-weight:400!important}
       <div style="padding:32px;border:1px solid rgba(201,168,76,.2);background:var(--dk2)">
         <div style="font-size:.6rem;letter-spacing:.25em;color:var(--gold);text-transform:uppercase;margin-bottom:12px">نوآوری</div>
         <h3 style="font-family:'Vazirmatn',sans-serif;font-size:1.4rem;font-weight:300;margin-bottom:10px;line-height:1.3">ایده‌ها و اختراعات</h3>
-        <p style="font-size:.85rem;color:var(--tx-d);line-height:1.7;margin-bottom:16px">از سیستم دفاع هوشمند جنگل تا دندان‌پزشکی رباتیک — تفکر بین‌رشته‌ای.</p>
+        <p style="font-size:.85rem;color:var(--tx-d);line-height:1.7;margin-bottom:16px">پروژه‌هایی در پیوند میان مهندسی، سلامت و فناوری.</p>
         <span style="font-size:.75rem;color:var(--gold);cursor:pointer" onclick="navigate('lab')">دنیای نوآوری ←</span>
       </div>
     </div>
