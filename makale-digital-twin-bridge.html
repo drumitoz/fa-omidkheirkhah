@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>دوقلوی دیجیتال پل؛ از حسگر تا تصمیم مهندسی | دکتر امید خیرخواه</title>
+<meta name="description" content="دوقلوی دیجیتال می‌تواند پایش را منسجم‌تر کند؛ اما هشدار نرم‌افزار به‌تنهایی اثبات خرابی یا تأیید ایمنی نیست."/>
+<link rel="canonical" href="https://fa.omidkheirkhah.com/makale-digital-twin-bridge.html"/>
+<meta property="og:type" content="article"/>
+<meta property="og:site_name" content="دکتر امید خیرخواه"/>
+<meta property="og:locale" content="fa_IR"/>
+<meta property="og:title" content="دوقلوی دیجیتال پل؛ از حسگر تا تصمیم مهندسی"/>
+<meta property="og:description" content="دوقلوی دیجیتال می‌تواند پایش را منسجم‌تر کند؛ اما هشدار نرم‌افزار به‌تنهایی اثبات خرابی یا تأیید ایمنی نیست."/>
+<meta property="og:url" content="https://fa.omidkheirkhah.com/makale-digital-twin-bridge.html"/>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="دوقلوی دیجیتال پل؛ از حسگر تا تصمیم مهندسی"/>
+<meta name="twitter:description" content="دوقلوی دیجیتال می‌تواند پایش را منسجم‌تر کند؛ اما هشدار نرم‌افزار به‌تنهایی اثبات خرابی یا تأیید ایمنی نیست."/>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"دوقلوی دیجیتال پل؛ از حسگر تا تصمیم مهندسی","description":"دوقلوی دیجیتال می‌تواند پایش را منسجم‌تر کند؛ اما هشدار نرم‌افزار به‌تنهایی اثبات خرابی یا تأیید ایمنی نیست.","inLanguage":"fa-IR","dateModified":"2026-08-31","mainEntityOfPage":"https://fa.omidkheirkhah.com/makale-digital-twin-bridge.html","publisher":{"@type":"Person","name":"دکتر امید خیرخواه","url":"https://fa.omidkheirkhah.com/"},"citation":["https://eng.unimelb.edu.au/csdila/research/archive/digital-twin/digital-twin-platform-for-structural-health-monitoring","https://doi.org/10.1016/j.iintel.2025.100184"]}</script>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@200;300;400;500;600&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{--gold:#c9a84c;--gold-dim:rgba(201,168,76,.12);--dk:#080808;--dk2:#0f0f0f;--dk3:#161616;--tx:#e8e0d0;--tx-d:rgba(232,224,208,.65);--tx-m:rgba(232,224,208,.90)}
+body{background:var(--dk);color:var(--tx);font-family:'Vazirmatn',sans-serif;font-weight:300;direction:rtl}
+a{color:inherit;text-decoration:none}
+nav{position:fixed;top:0;right:0;left:0;z-index:100;padding:20px 60px;display:flex;justify-content:space-between;align-items:center;background:linear-gradient(to bottom,rgba(8,8,8,.98),transparent)}
+.nav-logo{font-family:'Vazirmatn',sans-serif;font-size:1rem;letter-spacing:.2em;color:var(--gold);text-decoration:none}
+.nav-back{color:var(--tx-d);font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;text-decoration:none;border-bottom:1px solid rgba(232,224,208,.2);padding-bottom:2px;transition:all .3s}
+.nav-back:hover{color:var(--gold);border-color:var(--gold)}
+.article-hero{min-height:60vh;display:flex;flex-direction:column;justify-content:flex-end;padding:120px 80px 80px;background:linear-gradient(135deg,#080808,#080d08)}
+.article-category{font-size:.65rem;letter-spacing:.3em;color:var(--gold);text-transform:uppercase;margin-bottom:20px;display:flex;align-items:center;gap:16px}
+.article-category::before{content:'';width:30px;height:1px;background:var(--gold);opacity:.5}
+.article-title{font-family:'Vazirmatn',sans-serif;font-size:clamp(2.5rem,5vw,5rem);font-weight:300;line-height:1.1;max-width:800px;margin-bottom:24px}
+.article-title em{font-style:italic;color:var(--gold)}
+.article-meta{display:flex;gap:32px;color:var(--tx-d);font-size:.75rem;flex-wrap:wrap}
+.article-body{max-width:780px;margin:0 auto;padding:80px 40px 120px}
+.lead{font-family:'Vazirmatn',sans-serif;font-size:1.4rem;font-weight:300;line-height:1.7;color:var(--tx);margin-bottom:60px;padding-bottom:60px;border-bottom:1px solid rgba(201,168,76,.15)}
+.article-body h2{font-family:'Vazirmatn',sans-serif;font-size:2rem;font-weight:300;margin:60px 0 24px;padding-right:20px;border-right:2px solid var(--gold)}
+.article-body p{font-size:1rem;line-height:1.9;color:var(--tx-m);margin-bottom:20px}
+.highlight-box{background:var(--gold-dim);border-right:3px solid var(--gold);padding:28px 32px;margin:40px 0}
+.highlight-box p{color:var(--tx);margin:0;font-size:1.05rem}
+.key-point{display:flex;gap:16px;margin:16px 0;align-items:flex-start}
+.key-point::before{content:'';width:6px;height:6px;background:var(--gold);border-radius:50%;flex-shrink:0;margin-top:8px}
+.key-point p{margin:0;color:var(--tx-m)}
+.source-box{margin-top:40px;padding:20px 24px;background:var(--dk3);border-right:2px solid rgba(201,168,76,.3);font-size:.75rem;color:var(--tx-d);line-height:1.7}
+.source-box a{color:var(--gold);text-decoration:underline;text-underline-offset:3px}.author-box{margin-top:80px;padding:40px;border:1px solid rgba(201,168,76,.2);display:flex;gap:24px;align-items:center;background:var(--dk3)}
+.author-img{width:80px;height:80px;border-radius:50%;border:2px solid rgba(201,168,76,.3);overflow:hidden;flex-shrink:0}
+.author-img img{width:100%;height:100%;object-fit:cover;object-position:center top}
+.author-info h4{font-family:'Vazirmatn',sans-serif;font-size:1.2rem;margin-bottom:6px}
+.author-info p{font-size:.8rem;color:var(--tx-d);line-height:1.6;margin:0}
+.next-article{margin-top:60px;padding:40px;background:var(--dk2);border:1px solid rgba(201,168,76,.15);text-decoration:none;display:block;transition:all .3s}
+.next-article:hover{border-color:var(--gold)}
+.next-article span{font-size:.65rem;letter-spacing:.3em;color:var(--gold);text-transform:uppercase;display:block;margin-bottom:10px}
+.next-article h3{font-family:'Vazirmatn',sans-serif;font-size:1.5rem;font-weight:300;color:var(--tx)}
+.disclaimer{margin-top:40px;font-size:.75rem;color:var(--tx-d);text-align:center;padding:20px;border-top:1px solid rgba(201,168,76,.1)}
+footer{padding:40px 80px;border-top:1px solid rgba(201,168,76,.1);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+footer p{font-size:.7rem;color:var(--tx-d)}
+.footer-logo{font-family:'Vazirmatn',sans-serif;font-size:1rem;color:var(--gold);letter-spacing:.2em}
+@media(max-width:768px){nav{padding:18px 20px;gap:12px}.nav-logo{font-size:.78rem;letter-spacing:.06em;max-width:48vw;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.nav-back{font-size:.65rem;letter-spacing:.08em;white-space:nowrap}.article-hero{padding:145px 24px 60px;min-height:auto}.article-title{font-size:clamp(2rem,10vw,3rem);line-height:1.25}.article-body{padding:60px 24px 80px}.author-box{flex-direction:column;text-align:center}footer{padding:30px 24px;flex-direction:column;text-align:center}}
+</style>
+<link rel="stylesheet" href="article-science.css"/>
+</head>
+<body>
+<nav aria-label="ناوبری مقاله">
+<a href="index.html" class="nav-logo">دکتر امید خیرخواه</a>
+<a href="index.html#kesifet-civil" class="nav-back">همهٔ مقالات عمران ←</a>
+</nav>
+<header class="article-hero">
+<p class="article-category">پایش سلامت سازه · مدل‌سازی</p>
+<h1 class="article-title">دوقلوی دیجیتال پل؛ از حسگر تا تصمیم مهندسی</h1>
+<div class="article-meta"><span>مرور علمی و آموزشی</span><span>بازبینی محتوایی: <time datetime="2026-08-31">۲۰۲۶/۰۸/۳۱</time></span></div>
+</header>
+<main>
+<article class="article-body">
+<p class="lead">مدل سه‌بعدی زیبا لزوماً دوقلوی دیجیتال نیست. ارزش یک سامانهٔ پایش زمانی آشکار می‌شود که دادهٔ سازهٔ واقعی، مدل و تفسیر مهندسی به یکدیگر متصل باشند.</p>
+<aside class="science-summary" aria-label="خلاصه و نوع شواهد"><h2>در یک نگاه</h2><p>دوقلوی دیجیتال می‌تواند پایش را منسجم‌تر کند؛ اما هشدار نرم‌افزار به‌تنهایی اثبات خرابی یا تأیید ایمنی نیست.</p><p class="evidence-label"><strong>پشتوانهٔ این مرور:</strong> پروژهٔ پژوهشی دانشگاه ملبورن، ۲۰۲۴–۲۰۲۵؛ معرفی مقالهٔ چارچوب نمایشی با DOI</p></aside>
+<div class="science-toc"><p>در این مقاله</p><a href="#section-1">سه جزء اصلی</a><a href="#section-2">مدل چه کمکی می‌کند؟</a><a href="#section-3">پژوهش تکمیلی برای مطالعه</a><a href="#section-4">چگونه هشدار را تفسیر کنیم؟</a><a href="#limits">محدودیت‌ها</a><a href="#sources">منابع اصلی</a></div>
+<section aria-labelledby="section-1"><h2 id="section-1">سه جزء اصلی</h2><p>پروژهٔ دانشگاه ملبورن، داده‌های حسگرهای اینترنت اشیا، اطلاعات هندسی و مدل‌سازی مبتنی بر فیزیک با روش اجزای محدود را کنار هم قرار می‌دهد. هدف، فراهم‌کردن اطلاعات به‌روز دربارهٔ رفتار زیرساخت است. در این نگاه، نمایش هندسه فقط یکی از اجزای سامانه محسوب می‌شود. <a class="cite" href="#ref-1" aria-label="منبع 1">[۱]</a></p></section>
+<section aria-labelledby="section-2"><h2 id="section-2">مدل چه کمکی می‌کند؟</h2><p>دادهٔ اندازه‌گیری‌شده می‌گوید در نقطه‌ای از سازه چه رخ داده است؛ مدل برای تفسیر رفتار کلی به کار می‌رود. برنامهٔ پژوهشی ملبورن بر یک نمونهٔ نمایشی برای پایش پل تمرکز دارد. نمونهٔ نمایشی، امکان‌پذیری یک رویکرد را نشان می‌دهد، اما معادل اثبات دقت آن برای همهٔ پل‌ها نیست. <a class="cite" href="#ref-1" aria-label="منبع 1">[۱]</a></p></section>
+<section aria-labelledby="section-3"><h2 id="section-3">پژوهش تکمیلی برای مطالعه</h2><p>Nasim و همکاران مقاله‌ای با عنوان «نمایش یک چارچوب دوقلوی دیجیتال برای پایش سلامت سازه، با کاربرد در زیرساخت پل» منتشر کرده‌اند. پیوند DOI در منابع آمده است. در این مرور، چون متن کامل ناشر در دسترس بررسی نبود، ادعای عددی دربارهٔ دقت، نرخ هشدار یا عملکرد آن نقل نمی‌شود. <a class="cite" href="#ref-2" aria-label="منبع 2">[۲]</a></p></section>
+<section aria-labelledby="section-4"><h2 id="section-4">چگونه هشدار را تفسیر کنیم؟</h2><p>برداشت تحلیلی این مرور: پیش از نسبت‌دادن تغییر داده به آسیب، باید احتمال خطای حسگر، تغییر بار و شرایط محیطی بررسی شود. داشتن سابقهٔ مبنا، ثبت کیفیت داده و تعریف فرایند بازبینی مهندس ضروری است. سامانه‌ای که توضیح نمی‌دهد چرا هشدار داده، برای تصمیم پرپیامد کافی نیست.</p></section>
+<section id="limits"><h2>محدودیت‌ها و احتیاط در تفسیر</h2><p>این متن روش تشخیص قطعی آسیب یا صدور تأییدیهٔ ایمنی ارائه نمی‌کند. ارزش عملی هر سامانه به اعتبارسنجی روی سازهٔ هدف و پیوند آن با بازرسی و قضاوت متخصص وابسته است.</p></section>
+<aside class="highlight-box"><p><strong>جمع‌بندی:</strong> پل هوشمند، پلی با حسگر بیشتر نیست؛ پلی است که داده‌های قابل‌اعتماد آن به تصمیم قابل‌توضیح و مسئولانه منتهی شوند.</p></aside>
+<section class="source-box" id="sources" aria-labelledby="sources-title"><h2 id="sources-title">منابع و پیوندهای اصلی</h2><p>نام پژوهشگران و مالکیت آثار متعلق به منابع اصلی است. متن حاضر مرور و بازنویسی فارسی است، نه ترجمهٔ کامل، پژوهش اصیل یا مرور نظام‌مند مستقل.</p><ol><li id="ref-1"><a href="https://eng.unimelb.edu.au/csdila/research/archive/digital-twin/digital-twin-platform-for-structural-health-monitoring" target="_blank" rel="noopener noreferrer"><bdi dir="auto">University of Melbourne, CSDILA. Digital Twin Platform for Structural Health Monitoring (2024–2025). صفحهٔ رسمی پروژه؛ مشاهده در 2026-08-31.</bdi></a></li>
+<li id="ref-2"><a href="https://doi.org/10.1016/j.iintel.2025.100184" target="_blank" rel="noopener noreferrer"><bdi dir="auto">Nasim M, Rajabifard A, Chen Y, Samali B. A demonstration of a digital twin framework for structural health monitoring: Application to bridge infrastructures. مقالهٔ معرفی‌شده؛ متن کامل در این بازبینی بررسی نشد.</bdi></a></li></ol></section>
+<div class="author-box"><div class="author-img"><img src="profile.jpg" alt="دکتر امید خیرخواه" loading="lazy"/></div><div class="author-info"><h3>دکتر امید خیرخواه</h3><p>مرور و نگارش علمی برای این وب‌سایت؛ یافته‌های پژوهشگران با ارجاع مشخص از تحلیل توضیحی متن تفکیک شده‌اند.</p></div></div>
+<a href="makale-beton-energy.html" class="next-article"><span>مطالعهٔ مرتبط</span><h3>بتنِ ذخیره‌ساز انرژی؛ سازه‌ای که نقش ابرخازن دارد</h3></a>
+<p class="disclaimer">این متن آموزشی است و جایگزین طراحی، ارزیابی ایمنی یا تأیید مهندس مسئول پروژه نیست.</p>
+</article>
+</main>
+<footer><p>© ۲۰۲۶ دکتر امید خیرخواه</p><a href="index.html#kesifet" class="footer-logo">fa.omidkheirkhah.com</a></footer>
+</body>
+</html>
