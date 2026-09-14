@@ -881,7 +881,7 @@ function formSelectedText(form,name){
 }
 function openWhatsAppMessage(lines){
   const url=`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(lines.join('\n'))}`;
-  window.open(url,'_blank','noopener,noreferrer');
+  window.location.href=url;
 }
 
 document.getElementById('faUniversityForm').addEventListener('submit',event=>{
