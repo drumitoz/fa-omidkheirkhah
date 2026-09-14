@@ -555,7 +555,7 @@ main,.scene,.hub-body,.worlds,.bk-wrap,.iletisim-wrap,.kesifet-wrap{width:100%;m
       <div class="uni-cta-box">
         <h3>راهنمایی اولیه تحصیل در قبرس شمالی</h3>
         <p>برای بررسی اولیه دانشگاه، رشته و مراحل پذیرش می‌توانید از طریق ایمیل در تماس باشید. تصمیم نهایی را پس از استعلام مستقیم شرایط و اعتبار برنامه از دانشگاه و مراجع کشور مقصد بگیرید.</p>
-        <form class="uni-form" action="mailto:omid@omidkheirkhah.com" method="GET">
+        <form class="uni-form" id="faUniversityForm">
           <input class="full" type="text" name="name" placeholder="نام و نام خانوادگی" required/>
           <input type="email" name="email" placeholder="ایمیل" required/>
           <input type="tel" name="phone" placeholder="شماره تماس (واتساپ)"/>
@@ -576,7 +576,7 @@ main,.scene,.hub-body,.worlds,.bk-wrap,.iletisim-wrap,.kesifet-wrap{width:100%;m
             <option>سایر</option>
           </select>
           <textarea class="full" name="message" placeholder="سؤالات یا توضیحات بیشتر..." rows="3" style="padding:12px 16px;background:var(--dk3);border:1px solid rgba(232,224,208,.15);color:var(--tx);font-family:'Vazirmatn',sans-serif;font-size:.85rem;resize:vertical;direction:rtl"></textarea>
-          <button type="submit" class="full" style="padding:16px;background:var(--gold);color:var(--dk);font-family:'Vazirmatn',sans-serif;font-size:.9rem;font-weight:500;border:none;cursor:pointer">ارسال درخواست از طریق ایمیل ←</button>
+          <button type="submit" class="full" style="padding:16px;background:var(--gold);color:var(--dk);font-family:'Vazirmatn',sans-serif;font-size:.9rem;font-weight:500;border:none;cursor:pointer">ارسال درخواست از طریق واتساپ ←</button>
         </form>
       </div>
     </div>
@@ -640,7 +640,7 @@ main,.scene,.hub-body,.worlds,.bk-wrap,.iletisim-wrap,.kesifet-wrap{width:100%;m
         </div>
       </div>
       <div>
-        <form class="contact-form" action="mailto:omid@omidkheirkhah.com" method="GET">
+        <form class="contact-form" id="faContactForm">
           <div class="cf-row">
             <div class="cf-field"><label>نام</label><input type="text" name="name" placeholder="نام شما" required/></div>
             <div class="cf-field"><label>ایمیل</label><input type="email" name="email" placeholder="ایمیل شما" required/></div>
@@ -654,7 +654,7 @@ main,.scene,.hub-body,.worlds,.bk-wrap,.iletisim-wrap,.kesifet-wrap{width:100%;m
             </select>
           </div>
           <div class="cf-field"><label>پیام</label><textarea name="message" placeholder="پیام شما..." required></textarea></div>
-          <button type="submit" class="cf-submit">ارسال از طریق ایمیل ←</button>
+          <button type="submit" class="cf-submit">ارسال از طریق واتساپ ←</button>
         </form>
       </div>
     </div>
@@ -867,6 +867,54 @@ function filterArt(cat,el){
   applyArticleCategory(cat);
   history.replaceState(null,'',`#kesifet-${cat}`);
 }
+
+
+// WHATSAPP FORMS
+const WHATSAPP_NUMBER = '905338481611';
+
+function formValue(form,name){
+  return (form.elements[name]?.value || '').trim();
+}
+function formSelectedText(form,name){
+  const field=form.elements[name];
+  return field?.selectedOptions?.[0]?.textContent.trim() || 'مشخص نشده';
+}
+function openWhatsAppMessage(lines){
+  const url=`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(lines.join('\n'))}`;
+  window.open(url,'_blank','noopener,noreferrer');
+}
+
+document.getElementById('faUniversityForm').addEventListener('submit',event=>{
+  event.preventDefault();
+  const form=event.currentTarget;
+  if(!form.reportValidity())return;
+  openWhatsAppMessage([
+    'سلام آقای دکتر خیرخواه،',
+    'از نسخهٔ فارسی سایت برای مشاورهٔ تحصیل پیام می‌دهم.',
+    '',
+    `نام: ${formValue(form,'name')}`,
+    `ایمیل: ${formValue(form,'email')}`,
+    `شماره تماس: ${formValue(form,'phone') || 'مشخص نشده'}`,
+    `دانشگاه: ${formSelectedText(form,'university')}`,
+    `رشته: ${formSelectedText(form,'field')}`,
+    `توضیحات: ${formValue(form,'message') || 'ندارد'}`
+  ]);
+});
+
+document.getElementById('faContactForm').addEventListener('submit',event=>{
+  event.preventDefault();
+  const form=event.currentTarget;
+  if(!form.reportValidity())return;
+  openWhatsAppMessage([
+    'سلام آقای دکتر خیرخواه،',
+    'از نسخهٔ فارسی سایت پیام می‌دهم.',
+    '',
+    `نام: ${formValue(form,'name')}`,
+    `ایمیل: ${formValue(form,'email')}`,
+    `موضوع: ${formSelectedText(form,'subject')}`,
+    `پیام: ${formValue(form,'message')}`
+  ]);
+});
 
 // BOOT
 function boot(){
