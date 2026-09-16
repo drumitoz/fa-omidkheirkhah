@@ -90,4 +90,9 @@ $$('form').forEach(form=>form.addEventListener('submit',e=>{
   window.location.assign(url);
 }));
 $$('input,textarea').forEach(el=>el.addEventListener('input',()=>el.setCustomValidity('')));
+const certificateGallery=$('.credentials-gallery');
+if(certificateGallery){
+  certificateGallery.addEventListener('contextmenu',e=>e.preventDefault());
+  certificateGallery.addEventListener('dragstart',e=>{if(e.target.matches('.certificate-image img'))e.preventDefault();});
+}
 const initial=readRoute();setScene(initial.id,initial);
