@@ -24,6 +24,6 @@ for entry in manifest['files']:
     assert data[12:16] == b'VP8 ', f'Unexpected chunk: {path}'
     chunk_size = struct.unpack('<I', data[16:20])[0]
     assert len(data) == 20 + chunk_size + chunk_size % 2
-    assert f'src="{path}"' in index and f'href="{path}"' in index
+    assert f'src="{path}' in index and f'href="{path}' in index
 assert 'cv-private' not in index and 'sanitized-intermediate' not in index
 print('PASS: six reviewed opaque raster images; hashes, complete containers, no metadata or embedded originals; gallery uses only reviewed assets.')

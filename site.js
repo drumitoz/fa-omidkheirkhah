@@ -35,7 +35,7 @@ function applyArticleCategory(cat='all'){
 }
 function readRoute(){
   const [path,query='']=location.hash.slice(1).split('?');const match=path.match(/^kesifet(?:-(all|dental|civil))?$/);
-  const id=match?'kesifet':path;const target=document.getElementById(id);
+  const id=match?'kesifet':path==='credentials'?'benkimim':path;const target=document.getElementById(id);
   return {id:target?.classList.contains('scene')?id:'hub',cat:match?.[1]||'all',q:new URLSearchParams(query).get('q')||''};
 }
 function setScene(id,{cat='all',q='',focus=false}={}){

@@ -11,7 +11,7 @@ described as training. No new clinical licence or specialist qualification is cl
 ## Privacy review
 
 - Reviewed all six document scans and all six final exported images visually.
-- Removed portrait, parent name, birth information, nationality, student/identity
+- Removed parent name, birth information, nationality, student/identity
   numbers, GPA, address, registration/serial identifiers, barcode and QR code
   where present. Degree titles, holder name and issuer details remain.
 - Redaction was applied to the PDF image pixels before raster export. Fresh RGB
@@ -31,3 +31,12 @@ described as training. No new clinical licence or specialist qualification is cl
 
 The checks validate file identity and structure; they do not independently detect
 unredacted personal text in a new image. The originals remain unchanged privately.
+
+## Requested refinement
+
+The civil diploma portrait is restored at the holder's explicit request. Only
+eight small sensitive-value areas are redacted; academic dates and document text
+remain. Re-reviewed the final raster and updated its integrity hash.
+The full profile and gallery now appear inline in About. The old credentials
+route resolves to About. Digital work has a prominent home banner and an About
+panel describing website design, branding and software collaboration.
