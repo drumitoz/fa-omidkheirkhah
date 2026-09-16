@@ -43,7 +43,7 @@ function setScene(id,{cat='all',q='',focus=false}={}){
   currentScene=id;$$('.scene').forEach(s=>s.classList.toggle('active',s.id===id));closeMenu(false);
   if(id==='kesifet'){$('#articleSearch').value=q;applyArticleCategory(cat);}
   $$('.desktop-nav a').forEach(a=>{if(a.dataset.goto===id)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});
-  document.title=({hub:'دکتر امید خیرخواه — دندان‌پزشک · نوآور · نویسنده',kesifet:'مقالات علمی | دکتر امید خیرخواه',universiteler:'تحصیل در قبرس شمالی | دکتر امید خیرخواه',iletisim:'تماس | دکتر امید خیرخواه',benkimim:'درباره من | دکتر امید خیرخواه',civil:'مهندسی عمران | دکتر امید خیرخواه',dental:'سلامت دهان | دکتر امید خیرخواه',lab:'نوآوری | دکتر امید خیرخواه',writing:'نوشته‌ها | دکتر امید خیرخواه'})[id];
+  document.title=({hub:'دکتر امید خیرخواه — دندان‌پزشک · نوآور · نویسنده',kesifet:'مقالات علمی | دکتر امید خیرخواه',universiteler:'تحصیل در قبرس شمالی | دکتر امید خیرخواه',iletisim:'تماس | دکتر امید خیرخواه',credentials:'سوابق و مدارک | دکتر امید خیرخواه',benkimim:'درباره من | دکتر امید خیرخواه',civil:'مهندسی عمران | دکتر امید خیرخواه',dental:'سلامت دهان | دکتر امید خیرخواه',lab:'نوآوری | دکتر امید خیرخواه',writing:'نوشته‌ها | دکتر امید خیرخواه'})[id];
   if(id==='hub')initHub();
   window.scrollTo({top:0,behavior:'instant'});
   if(focus){const heading=document.querySelector('#'+id+' h1, #'+id+' h2');if(heading){heading.tabIndex=-1;heading.focus({preventScroll:true});}}

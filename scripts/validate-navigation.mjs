@@ -8,7 +8,7 @@ function node(classes=[],cat,text=''){
  return {classList:{add:x=>values.add(x),remove:x=>values.delete(x),contains:x=>values.has(x),toggle(x,on){if(on)values.add(x);else values.delete(x);}},dataset:{cat},textContent:text,value:'',hidden:false,inert:false,attrs,events,setAttribute(k,v){attrs[k]=v;},removeAttribute(k){delete attrs[k];},addEventListener(k,fn){events[k]=fn;},focus(){this.focused=true;},querySelectorAll(){return[];}};
 }
 function setup(hash=''){
- const ids={},handlers={},sceneNames=['hub','kesifet','universiteler','benkimim','iletisim','dental','civil','lab','writing'];
+ const ids={},handlers={},sceneNames=['hub','kesifet','universiteler','benkimim','iletisim','dental','civil','lab','writing','credentials'];
  for(const id of sceneNames){ids[id]=node(['scene']);ids[id].id=id;}
  for(const id of ['menuOverlay','menuBtn','menuClose','main-content','articleSearch','clearSearch','articleCount','noArticles','articlesTitle'])ids[id]=node();
  const nav=node(),body=node(),filters=['all','dental','civil'].map(c=>node([],c));
@@ -20,8 +20,8 @@ function setup(hash=''){
  vm.runInContext(script,ctx);
  return{ctx,ids,rows,filters,location,handlers,nav};
 }
-for(const hash of ['', '#civil','#dental','#kesifet','#kesifet-all','#kesifet-dental','#kesifet-civil','#trading','#kesifet-trade','#bad']){
- const t=setup(hash),expected=hash==='#civil'?'civil':hash==='#dental'?'dental':/^#kesifet(?:-(all|dental|civil))?$/.test(hash)?'kesifet':'hub';
+for(const hash of ['', '#credentials', '#civil','#dental','#kesifet','#kesifet-all','#kesifet-dental','#kesifet-civil','#trading','#kesifet-trade','#bad']){
+ const t=setup(hash),expected=hash==='#credentials'?'credentials':hash==='#civil'?'civil':hash==='#dental'?'dental':/^#kesifet(?:-(all|dental|civil))?$/.test(hash)?'kesifet':'hub';
  assert(t.ids[expected].classList.contains('active'),hash);
  assert.equal(Object.values(t.ids).filter(n=>n.classList.contains('scene')&&n.classList.contains('active')).length,1);
  if(hash==='#kesifet-civil')assert.equal(t.rows.filter(r=>!r.hidden).length,5);
