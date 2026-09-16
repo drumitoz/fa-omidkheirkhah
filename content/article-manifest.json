@@ -1,0 +1,469 @@
+{
+  "makale-beton-energy.html": {
+    "title": "بتنِ ذخیره‌ساز انرژی؛ سازه‌ای که نقش ابرخازن دارد",
+    "cat": "civil",
+    "words": 529,
+    "minutes": 3,
+    "citations": [
+      "https://doi.org/10.1073/pnas.2511912122",
+      "https://news.mit.edu/2025/concrete-battery-now-packs-ten-times-power-1001"
+    ]
+  },
+  "makale-beton-self-healing.html": {
+    "title": "بتن خودترمیم‌شونده؛ بسته‌شدن ترک با بازیابی مقاومت فرق دارد",
+    "cat": "civil",
+    "words": 524,
+    "minutes": 3,
+    "citations": [
+      "https://doi.org/10.1038/s41598-025-96971-y",
+      "https://doi.org/10.1038/s41598-023-34837-x"
+    ]
+  },
+  "makale-zalzale-functional-recovery.html": {
+    "title": "پس از زلزله، فرونریختن کافی نیست؛ مفهوم بازیابی عملکرد",
+    "cat": "civil",
+    "words": 513,
+    "minutes": 3,
+    "citations": [
+      "https://www.nist.gov/functional-recovery",
+      "https://doi.org/10.6028/NIST.SP.1341"
+    ]
+  },
+  "makale-beton-low-carbon.html": {
+    "title": "بتن کم‌کربن؛ مقایسهٔ مصالح فراتر از یک عدد",
+    "cat": "civil",
+    "words": 527,
+    "minutes": 3,
+    "citations": [
+      "https://doi.org/10.1038/s44458-025-00027-1",
+      "https://www.epfl.ch/labs/lmc/research/low-carbon-concrete/"
+    ]
+  },
+  "makale-digital-twin-bridge.html": {
+    "title": "دوقلوی دیجیتال پل؛ از حسگر تا تصمیم مهندسی",
+    "cat": "civil",
+    "words": 523,
+    "minutes": 3,
+    "citations": [
+      "https://eng.unimelb.edu.au/csdila/research/archive/digital-twin/digital-twin-platform-for-structural-health-monitoring",
+      "https://doi.org/10.1016/j.iintel.2025.100184"
+    ]
+  },
+  "makale-dis-curugu.html": {
+    "title": "پوسیدگی دندان؛ از ارزیابی خطر تا درمان کم‌تهاجمی",
+    "cat": "dental",
+    "words": 576,
+    "minutes": 4,
+    "citations": [
+      "https://www.ada.org/resources/ada-library/oral-health-topics/caries-risk-assessment-and-management",
+      "https://doi.org/10.1016/j.adaj.2018.07.002",
+      "https://doi.org/10.1016/j.adaj.2023.04.011"
+    ]
+  },
+  "makale-dis-firca.html": {
+    "title": "مسواک‌زدن مؤثر؛ روش درست مهم‌تر است یا نوع مسواک؟",
+    "cat": "dental",
+    "words": 583,
+    "minutes": 4,
+    "citations": [
+      "https://www.gov.uk/government/publications/delivering-better-oral-health-an-evidence-based-toolkit-for-prevention/chapter-8-oral-hygiene",
+      "https://doi.org/10.1002/14651858.CD002281.pub3"
+    ]
+  },
+  "makale-nakh-dishan.html": {
+    "title": "نخ دندان و پاک‌سازی بین‌دندانی؛ انتخاب ابزار و فهم شواهد",
+    "cat": "dental",
+    "words": 515,
+    "minutes": 3,
+    "citations": [
+      "https://www.ada.org/resources/ada-library/oral-health-topics/floss",
+      "https://www.nidcr.nih.gov/health-info/oral-hygiene"
+    ]
+  },
+  "makale-dis-hassasiyeti.html": {
+    "title": "حساسیت دندان؛ از شناخت محرک تا انتخاب درمان",
+    "cat": "dental",
+    "words": 505,
+    "minutes": 3,
+    "citations": [
+      "https://www.mouthhealthy.org/all-topics-a-z/sensitive-teeth",
+      "https://www.ada.org/resources/ada-library/oral-health-topics/toothpastes",
+      "https://www.nhs.uk/symptoms/toothache/"
+    ]
+  },
+  "makale-dis-eti.html": {
+    "title": "بیماری لثه؛ تفاوت التهاب سطحی با آسیب بافت نگهدارنده",
+    "cat": "dental",
+    "words": 479,
+    "minutes": 3,
+    "citations": [
+      "https://www.nidcr.nih.gov/health-info/gum-disease",
+      "https://www.ada.org/resources/ada-library/oral-health-topics/periodontitis"
+    ]
+  },
+  "makale-dis-apsesi.html": {
+    "title": "آبسهٔ دندانی؛ نشانه‌های خطر و اهمیت درمان علت",
+    "cat": "dental",
+    "words": 482,
+    "minutes": 3,
+    "citations": [
+      "https://www.nhs.uk/conditions/dental-abscess/",
+      "https://www.ada.org/resources/ada-library/oral-health-topics/antibiotic-stewardship",
+      "https://www.nhs.uk/tests-and-treatments/root-canal-treatment/"
+    ]
+  },
+  "makale-canal-tedavisi.html": {
+    "title": "درمان ریشه؛ چه زمانی لازم است و چگونه دندان حفظ می‌شود؟",
+    "cat": "dental",
+    "words": 483,
+    "minutes": 3,
+    "citations": [
+      "https://www.nhs.uk/tests-and-treatments/root-canal-treatment/",
+      "https://www.ada.org/resources/ada-library/oral-health-topics/antibiotic-stewardship",
+      "https://www.nhs.uk/symptoms/toothache/"
+    ]
+  },
+  "makale-implant.html": {
+    "title": "ایمپلنت یا بریج؛ مقایسه بر اساس شرایط واقعی دهان",
+    "cat": "dental",
+    "words": 478,
+    "minutes": 3,
+    "citations": [
+      "https://www.mouthhealthy.org/all-topics-a-z/implants",
+      "https://www.mouthhealthy.org/all-topics-a-z/bridges",
+      "https://www.nidcr.nih.gov/health-info/gum-disease"
+    ]
+  },
+  "makale-ortodonti.html": {
+    "title": "ارتودنسی ثابت یا الاینر؛ انتخاب بر پایهٔ تشخیص و همکاری",
+    "cat": "dental",
+    "words": 486,
+    "minutes": 3,
+    "citations": [
+      "https://www.nhs.uk/tests-and-treatments/braces/",
+      "https://www.nidcr.nih.gov/health-info/oral-hygiene",
+      "https://www.nidcr.nih.gov/health-info/tmd"
+    ]
+  },
+  "makale-dis-beyazlatma.html": {
+    "title": "سفیدکردن دندان؛ اثر واقعی، محدودیت‌ها و مراقبت از حساسیت",
+    "cat": "dental",
+    "words": 476,
+    "minutes": 3,
+    "citations": [
+      "https://www.ada.org/resources/ada-library/oral-health-topics/whitening",
+      "https://www.mouthhealthy.org/all-topics-a-z/sensitive-teeth",
+      "https://www.ada.org/resources/ada-library/oral-health-topics/toothpastes"
+    ]
+  },
+  "makale-bavbad-dahan.html": {
+    "title": "بوی بد دهان؛ یافتن علت به‌جای پوشاندن علامت",
+    "cat": "dental",
+    "words": 479,
+    "minutes": 3,
+    "citations": [
+      "https://www.nhs.uk/symptoms/bad-breath/",
+      "https://www.nidcr.nih.gov/health-info/dry-mouth",
+      "https://www.ada.org/resources/ada-library/oral-health-topics/mouthrinse-mouthwash"
+    ]
+  },
+  "makale-khoshki-dahan.html": {
+    "title": "خشکی دهان؛ چرا فقط نوشیدن آب کافی نیست؟",
+    "cat": "dental",
+    "words": 497,
+    "minutes": 3,
+    "citations": [
+      "https://www.nidcr.nih.gov/health-info/dry-mouth",
+      "https://www.nidcr.nih.gov/health-info/tooth-decay",
+      "https://www.ada.org/resources/ada-library/oral-health-topics/aging-and-dental-health"
+    ]
+  },
+  "makale-bruksizm.html": {
+    "title": "دندان‌قروچه در خواب و بیداری؛ محافظت از دندان و یافتن عوامل مؤثر",
+    "cat": "dental",
+    "words": 487,
+    "minutes": 3,
+    "citations": [
+      "https://www.nidcr.nih.gov/health-info/bruxism",
+      "https://www.nidcr.nih.gov/health-info/tmd"
+    ]
+  },
+  "makale-dandan-aghl.html": {
+    "title": "دندان عقل؛ چه زمانی پایش کافی است و چه زمانی جراحی مطرح می‌شود؟",
+    "cat": "dental",
+    "words": 471,
+    "minutes": 3,
+    "citations": [
+      "https://www.nhs.uk/tests-and-treatments/wisdom-tooth-removal/",
+      "https://www.nhs.uk/symptoms/toothache/"
+    ]
+  },
+  "makale-anva-dandandard.html": {
+    "title": "دندان‌درد؛ الگوی درد چه می‌گوید و چه چیزی را ثابت نمی‌کند؟",
+    "cat": "dental",
+    "words": 485,
+    "minutes": 3,
+    "citations": [
+      "https://www.nhs.uk/symptoms/toothache/",
+      "https://www.mouthhealthy.org/all-topics-a-z/sensitive-teeth",
+      "https://www.nhs.uk/conditions/dental-abscess/"
+    ]
+  },
+  "makale-khonrizi-lase.html": {
+    "title": "خونریزی لثه؛ علامتی برای بررسی، نه دلیلی برای قطع بهداشت",
+    "cat": "dental",
+    "words": 472,
+    "minutes": 3,
+    "citations": [
+      "https://www.nidcr.nih.gov/health-info/gum-disease",
+      "https://www.nidcr.nih.gov/health-info/oral-hygiene",
+      "https://www.ada.org/resources/ada-library/oral-health-topics/periodontitis"
+    ]
+  },
+  "makale-aghabneshini-lase.html": {
+    "title": "تحلیل لثه؛ علت‌ها، کنترل پیشرفت و حدود جراحی پوشش ریشه",
+    "cat": "dental",
+    "words": 477,
+    "minutes": 3,
+    "citations": [
+      "https://www.nidcr.nih.gov/health-info/gum-disease",
+      "https://www.ada.org/resources/ada-library/oral-health-topics/periodontitis",
+      "https://www.mouthhealthy.org/all-topics-a-z/sensitive-teeth"
+    ]
+  },
+  "makale-entekhab-khamir.html": {
+    "title": "انتخاب خمیردندان؛ مادهٔ فعال مهم‌تر از شعار روی بسته است",
+    "cat": "dental",
+    "words": 482,
+    "minutes": 3,
+    "citations": [
+      "https://www.ada.org/resources/ada-library/oral-health-topics/toothpastes",
+      "https://www.ada.org/resources/ada-library/oral-health-topics/fluoride-topical-and-systemic-supplements",
+      "https://www.ada.org/resources/ada-library/oral-health-topics/whitening"
+    ]
+  },
+  "makale-zarbe-dandan.html": {
+    "title": "ضربه به دندان؛ تصمیم‌های فوری و پیگیری پس از حادثه",
+    "cat": "dental",
+    "words": 465,
+    "minutes": 3,
+    "citations": [
+      "https://www.nhs.uk/conditions/knocked-out-tooth/",
+      "https://www.nhs.uk/symptoms/toothache/"
+    ]
+  },
+  "makale-anva-porkardegi.html": {
+    "title": "مواد پرکردگی دندان؛ انتخاب بر اساس بافت، محل و امکان ترمیم",
+    "cat": "dental",
+    "words": 459,
+    "minutes": 3,
+    "citations": [
+      "https://www.nidcr.nih.gov/health-info/dental-fillings",
+      "https://www.ada.org/resources/ada-library/oral-health-topics/caries-risk-assessment-and-management",
+      "https://www.ada.org/resources/ada-library/oral-health-topics/toothpastes"
+    ]
+  },
+  "makale-fisor-silant.html": {
+    "title": "فیشورسیلانت؛ محافظت هدفمند از شیارهای دندان",
+    "cat": "dental",
+    "words": 448,
+    "minutes": 3,
+    "citations": [
+      "https://www.mouthhealthy.org/all-topics-a-z/sealants",
+      "https://www.ada.org/resources/ada-library/oral-health-topics/caries-risk-assessment-and-management",
+      "https://www.nidcr.nih.gov/health-info/tooth-decay"
+    ]
+  },
+  "makale-florayd.html": {
+    "title": "فلوراید و پیشگیری از پوسیدگی؛ فایده، مقدار مصرف و محدودیت شواهد",
+    "cat": "dental",
+    "words": 571,
+    "minutes": 4,
+    "citations": [
+      "https://www.ada.org/resources/ada-library/oral-health-topics/fluoride-topical-and-systemic-supplements",
+      "https://doi.org/10.1002/14651858.CD007868.pub3",
+      "https://www.gov.uk/government/publications/delivering-better-oral-health-an-evidence-based-toolkit-for-prevention/chapter-9-fluoride"
+    ]
+  },
+  "makale-dahanshooye.html": {
+    "title": "دهان‌شویه؛ انتخاب بر اساس نیاز، نه احساس سوزش",
+    "cat": "dental",
+    "words": 484,
+    "minutes": 3,
+    "citations": [
+      "https://www.ada.org/resources/ada-library/oral-health-topics/mouthrinse-mouthwash",
+      "https://www.ada.org/resources/ada-library/oral-health-topics/fluoride-topical-and-systemic-supplements",
+      "https://www.nhs.uk/symptoms/bad-breath/"
+    ]
+  },
+  "makale-bardari-dandan.html": {
+    "title": "سلامت دهان در بارداری؛ مراقبت ایمن و پرهیز از تأخیر درمان",
+    "cat": "dental",
+    "words": 469,
+    "minutes": 3,
+    "citations": [
+      "https://www.ada.org/resources/ada-library/oral-health-topics/pregnancy",
+      "https://www.nidcr.nih.gov/health-info/oral-hygiene"
+    ]
+  },
+  "makale-diabet-dandan.html": {
+    "title": "دیابت و سلامت دهان؛ ارتباط دوطرفه با حدود مشخص",
+    "cat": "dental",
+    "words": 476,
+    "minutes": 3,
+    "citations": [
+      "https://www.nidcr.nih.gov/health-info/diabetes",
+      "https://www.ada.org/resources/ada-library/oral-health-topics/periodontitis"
+    ]
+  },
+  "makale-ghalb-dandan.html": {
+    "title": "سلامت دهان و قلب؛ تفاوت ارتباط آماری با علت بیماری",
+    "cat": "dental",
+    "words": 463,
+    "minutes": 3,
+    "citations": [
+      "https://professional.heart.org/en/science-news/periodontal-disease-and-atherosclerotic-cardiovascular-disease/top-things-to-know",
+      "https://www.ada.org/resources/ada-library/oral-health-topics/antibiotic-prophylaxis",
+      "https://www.nidcr.nih.gov/health-info/gum-disease"
+    ]
+  },
+  "makale-ghand-dandan.html": {
+    "title": "قند و پوسیدگی؛ چرا الگوی مصرف هم اهمیت دارد؟",
+    "cat": "dental",
+    "words": 454,
+    "minutes": 3,
+    "citations": [
+      "https://www.ada.org/resources/ada-library/oral-health-topics/nutrition-and-oral-health",
+      "https://www.ada.org/resources/ada-library/oral-health-topics/caries-risk-assessment-and-management",
+      "https://www.nidcr.nih.gov/health-info/tooth-decay"
+    ]
+  },
+  "makale-sigar-dahan.html": {
+    "title": "دخانیات و دهان؛ فراتر از زردشدن دندان‌ها",
+    "cat": "dental",
+    "words": 458,
+    "minutes": 3,
+    "citations": [
+      "https://www.ada.org/resources/ada-library/oral-health-topics/tobacco-use-and-cessation",
+      "https://www.nidcr.nih.gov/health-info/oral-cancer",
+      "https://www.ada.org/resources/ada-library/oral-health-topics/periodontitis"
+    ]
+  },
+  "makale-estres-dandan.html": {
+    "title": "استرس و سلامت دهان؛ اثرهای مستقیم و تغییر عادت‌ها",
+    "cat": "dental",
+    "words": 478,
+    "minutes": 3,
+    "citations": [
+      "https://www.nidcr.nih.gov/health-info/bruxism",
+      "https://www.nidcr.nih.gov/health-info/tmd",
+      "https://www.nidcr.nih.gov/health-info/dry-mouth"
+    ]
+  },
+  "makale-mafsal-fak.html": {
+    "title": "اختلالات مفصل فک؛ از صدای بی‌درد تا محدودیت حرکت",
+    "cat": "dental",
+    "words": 458,
+    "minutes": 3,
+    "citations": [
+      "https://www.nidcr.nih.gov/health-info/tmd",
+      "https://www.nidcr.nih.gov/health-info/bruxism"
+    ]
+  },
+  "makale-dandan-koodakan.html": {
+    "title": "دندان کودک؛ مراقبت از نخستین دندان تا ساختن عادت پایدار",
+    "cat": "dental",
+    "words": 459,
+    "minutes": 3,
+    "citations": [
+      "https://www.mouthhealthy.org/all-topics-a-z/teething",
+      "https://www.ada.org/resources/ada-library/oral-health-topics/toothpastes",
+      "https://www.mouthhealthy.org/all-topics-a-z/sealants"
+    ]
+  },
+  "makale-salmandi-dandan.html": {
+    "title": "سلامت دهان در سالمندی؛ حفظ عملکرد و ساده‌کردن مراقبت",
+    "cat": "dental",
+    "words": 448,
+    "minutes": 3,
+    "citations": [
+      "https://www.ada.org/resources/ada-library/oral-health-topics/aging-and-dental-health",
+      "https://www.nidcr.nih.gov/health-info/dry-mouth",
+      "https://www.nidcr.nih.gov/health-info/oral-hygiene"
+    ]
+  },
+  "makale-saratan-dahan.html": {
+    "title": "سرطان دهان؛ شناخت نشانه‌ها بدون تشخیص‌گذاری اینترنتی",
+    "cat": "dental",
+    "words": 432,
+    "minutes": 3,
+    "citations": [
+      "https://www.nidcr.nih.gov/health-info/oral-cancer",
+      "https://www.cancer.gov/about-cancer/causes-prevention/risk/infectious-agents/hpv-and-cancer",
+      "https://www.ada.org/resources/ada-library/oral-health-topics/tobacco-use-and-cessation"
+    ]
+  },
+  "makale-apne-khab.html": {
+    "title": "آپنهٔ خواب؛ نقش ارزیابی پزشکی و وسایل داخل دهانی",
+    "cat": "dental",
+    "words": 464,
+    "minutes": 3,
+    "citations": [
+      "https://www.nhs.uk/conditions/sleep-apnoea/",
+      "https://www.nidcr.nih.gov/health-info/bruxism",
+      "https://www.nidcr.nih.gov/health-info/tmd"
+    ]
+  },
+  "makale-microbiom-dahan.html": {
+    "title": "میکروبیوم دهان؛ چرا هدف، حذف همهٔ میکروب‌ها نیست؟",
+    "cat": "dental",
+    "words": 465,
+    "minutes": 3,
+    "citations": [
+      "https://doi.org/10.1038/s41579-023-00963-6",
+      "https://www.nidcr.nih.gov/health-info/oral-hygiene",
+      "https://www.ada.org/resources/ada-library/oral-health-topics/caries-risk-assessment-and-management"
+    ]
+  },
+  "makale-darman-periodontal.html": {
+    "title": "درمان پریودنتال؛ از کنترل علت تا مراقبت نگهدارنده",
+    "cat": "dental",
+    "words": 446,
+    "minutes": 3,
+    "citations": [
+      "https://www.efp.org/education/continuing-education/clinical-guidelines/",
+      "https://www.ada.org/resources/ada-library/oral-health-topics/periodontitis",
+      "https://www.nidcr.nih.gov/health-info/gum-disease"
+    ]
+  },
+  "makale-bazsazi-mina.html": {
+    "title": "بازمعدنی‌شدن مینا؛ چه چیزی برمی‌گردد و چه چیزی نه؟",
+    "cat": "dental",
+    "words": 467,
+    "minutes": 3,
+    "citations": [
+      "https://www.nidcr.nih.gov/health-info/tooth-decay/more-info/tooth-decay-process",
+      "https://www.ada.org/resources/ada-library/oral-health-topics/fluoride-topical-and-systemic-supplements",
+      "https://www.ada.org/resources/ada-library/oral-health-topics/caries-risk-assessment-and-management"
+    ]
+  },
+  "makale-hpv-saratan.html": {
+    "title": "HPV و سرطان دهانی‌حلقی؛ عفونت، پیشگیری و محدودیت غربالگری",
+    "cat": "dental",
+    "words": 438,
+    "minutes": 3,
+    "citations": [
+      "https://www.cancer.gov/about-cancer/causes-prevention/risk/infectious-agents/hpv-and-cancer",
+      "https://www.nidcr.nih.gov/health-info/oral-cancer"
+    ]
+  },
+  "makale-noma.html": {
+    "title": "نوما؛ بیماری شدید دهان در پیوند با فقر و دسترسی به درمان",
+    "cat": "dental",
+    "words": 457,
+    "minutes": 3,
+    "citations": [
+      "https://www.who.int/news-room/fact-sheets/detail/noma"
+    ]
+  }
+}
