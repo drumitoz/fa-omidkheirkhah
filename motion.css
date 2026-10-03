@@ -9,10 +9,12 @@
   box-shadow:0 0 12px rgba(201,168,76,.55)}
 
 /* ── Hero: particles, tooth tilt, word reveal ─────────────────── */
-.fx-dust{position:absolute;inset:-80px -6vw -40px;width:calc(100% + 12vw);height:calc(100% + 120px);
-  pointer-events:none;z-index:-1;opacity:0;transition:opacity 2s ease .6s}
+.fx-dust{position:absolute;left:0;width:100%;pointer-events:none;z-index:0;overflow:hidden;opacity:0;transition:opacity 2s ease .6s}
+.fx-dust i{position:absolute;border-radius:50%;background:#e8c97a;box-shadow:0 0 6px rgba(201,168,76,.8);opacity:0;
+  animation:fxDust var(--dur) linear var(--del) infinite}
+@keyframes fxDust{0%{opacity:0;transform:translate(0,0)}15%{opacity:.75}70%{opacity:.35}100%{opacity:0;transform:translate(var(--dx),-140px)}}
 .fx .hub-ready .fx-dust{opacity:1}
-.fx .hero-arch .tooth-3d{transform:rotateX(var(--tx,0deg)) rotateY(var(--ty,0deg));transform-style:preserve-3d;will-change:transform}
+.fx .hero-arch .tooth-3d{transform:rotateX(var(--tx,0deg)) rotateY(var(--ty,0deg))}
 .fx .hero-arch::after{content:'';position:absolute;inset:12%;border-radius:50%;z-index:-1;
   background:radial-gradient(circle,rgba(201,168,76,.22),transparent 65%);filter:blur(18px);
   animation:fxBreath 6s ease-in-out infinite}
@@ -83,9 +85,6 @@
 .fx-cursor-hide input,.fx-cursor-hide textarea,.fx-cursor-hide select{cursor:auto}
 
 /* ── Latest articles: horizontal reel driven by vertical scroll ── */
-/* sticky needs ancestors that clip without becoming scroll containers */
-html.fx,.fx body{overflow-x:clip}
-.fx .hub-body{overflow:clip}
 .fx .latest-home.fx-has-reel{grid-template-columns:1fr;border-bottom:0;margin-bottom:0;padding-bottom:10px}
 .fx .latest-home.fx-has-reel>article{display:none}
 .fx-reel{position:relative;width:100vw;margin-inline:calc(50% - 50vw);margin-bottom:40px}
@@ -123,3 +122,4 @@ html.fx,.fx body{overflow-x:clip}
   .fx h1.hero-h .fx-w>span{transform:none!important;opacity:1!important;filter:none!important}
 }
 @media print{.fx-progress,.fx-dust,.fx-cursor,.fx-sweep{display:none!important}}
+

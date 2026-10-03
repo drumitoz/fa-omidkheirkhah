@@ -47,6 +47,13 @@ if(latest&&window.fetch){
     const meta=el('div','fx-reel-meta'),count=el('span','fx-reel-count'),line=el('span','fx-reel-line');line.append(el('i'));
     line.style.setProperty('--p-origin',rtl?'right':'left');meta.append(count,line);
     sticky.append(track,meta);reel.append(sticky);latest.after(reel);latest.classList.add('fx-has-reel');
+    // Sticky needs ancestors that clip without becoming scroll containers. Swap only an
+    // existing 'hidden' for 'clip' (same look) so nothing that was visible gets cropped.
+    for(let a=reel.parentElement;a;a=a.parentElement){
+      const cs=getComputedStyle(a);
+      if(cs.overflowX==='hidden')a.style.overflowX='clip';
+      if(cs.overflowY==='hidden')a.style.overflowY='clip';
+    }
     const cards=[...track.children],total=items.length;
     count.textContent=num(1)+' / '+num(total);
     if(reduce){reel.classList.add('fx-static');return;}
@@ -100,33 +107,21 @@ if(h1){
   walk(h1);h1.classList.add('fx-split');
 }
 
-/* Hero: gold dust canvas */
+/* Hero: gold dust. Plain CSS-animated dots behind the hero; a <canvas> here made
+   Chrome paint the profile photo and tooth black on desktop. */
 const hero=$('.hero');
 if(hero){
-  const cv=document.createElement('canvas');cv.className='fx-dust';cv.setAttribute('aria-hidden','true');hero.prepend(cv);
-  const ctx=cv.getContext('2d');let W=0,H=0,dpr=1,pts=[],running=false,visible=true;
-  const N=()=>innerWidth<700?34:70;
-  const size=()=>{dpr=Math.min(devicePixelRatio||1,2);W=cv.clientWidth;H=cv.clientHeight;cv.width=W*dpr;cv.height=H*dpr;ctx.setTransform(dpr,0,0,dpr,0,0);
-    pts=Array.from({length:N()},()=>({x:Math.random()*W,y:Math.random()*H,r:Math.random()*1.4+.3,vy:-(Math.random()*.25+.05),vx:(Math.random()-.5)*.12,a:Math.random()*.6+.15,t:Math.random()*6.28}));};
-  let mx=0,my=0;
-  const frame=()=>{
-    if(!running)return;
-    ctx.clearRect(0,0,W,H);
-    for(const p of pts){
-      p.t+=.02;p.x+=p.vx+mx*.15*p.r;p.y+=p.vy+my*.08*p.r;
-      if(p.y<-5){p.y=H+5;p.x=Math.random()*W;}if(p.x<-5)p.x=W+5;if(p.x>W+5)p.x=-5;
-      const a=p.a*(.6+.4*Math.sin(p.t));
-      ctx.beginPath();ctx.arc(p.x,p.y,p.r,0,6.283);ctx.fillStyle=`rgba(232,201,122,${a})`;
-      ctx.shadowColor='rgba(201,168,76,.9)';ctx.shadowBlur=p.r*6;ctx.fill();
-    }
-    requestAnimationFrame(frame);
-  };
-  const start=()=>{const want=visible&&!document.hidden&&hero.offsetParent!==null;if(want&&!running){running=true;requestAnimationFrame(frame);}else if(!want)running=false;};
-  new ResizeObserver(()=>{size();start();}).observe(cv);
-  new IntersectionObserver(([e])=>{visible=e.isIntersecting;start();}).observe(hero);
-  document.addEventListener('visibilitychange',start);
-  addEventListener('pointermove',e=>{mx=(e.clientX/innerWidth-.5)*2;my=(e.clientY/innerHeight-.5)*2;},{passive:true});
-  hero._fxStart=start;
+  const host=hero.parentElement;if(getComputedStyle(host).position==='static')host.style.position='relative';
+  const dust=document.createElement('div');dust.className='fx-dust';dust.setAttribute('aria-hidden','true');
+  const n=innerWidth<700?18:36;
+  for(let i=0;i<n;i++){
+    const d=document.createElement('i'),sz=(Math.random()*2.2+1).toFixed(1);
+    d.style.cssText=`left:${(Math.random()*100).toFixed(2)}%;top:${(Math.random()*100).toFixed(2)}%;width:${sz}px;height:${sz}px;--dur:${(Math.random()*10+9).toFixed(1)}s;--del:${(-Math.random()*18).toFixed(1)}s;--dx:${((Math.random()-.5)*60).toFixed(0)}px`;
+    dust.append(d);
+  }
+  host.insertBefore(dust,hero);
+  const place=()=>{dust.style.top=Math.max(0,hero.offsetTop-80)+'px';dust.style.height=(hero.offsetHeight+120)+'px';};
+  place();new ResizeObserver(place).observe(hero);
 }
 
 /* Hero: tooth follows the pointer (or device tilt) */
@@ -175,7 +170,7 @@ const mo=new MutationObserver(muts=>{
     const s=m.target;
     if(s.classList.contains('active')&&!(m.oldValue||'').includes('active')){
       if(!first){sweep.classList.remove('go');void sweep.offsetWidth;sweep.classList.add('go');}
-      requestAnimationFrame(()=>{prime(s);scroller=s.scrollHeight>s.clientHeight+1?s:(document.scrollingElement||root);updateBar();hero&&hero._fxStart&&hero._fxStart();});
+      requestAnimationFrame(()=>{prime(s);scroller=s.scrollHeight>s.clientHeight+1?s:(document.scrollingElement||root);updateBar();});
     }
   }
   first=false;
