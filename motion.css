@@ -1,0 +1,125 @@
+/* motion.css — shared visual layer for fa.omidkheirkhah.com and omidkheirkhah.com.
+   Keep this file byte-identical in both repositories. Everything is scoped under
+   html.fx (added by motion.js) so the site still works without JavaScript. */
+
+/* ── Scroll progress ─────────────────────────────────────────── */
+.fx-progress{position:fixed;top:0;inset-inline:0;height:2px;z-index:400;pointer-events:none;
+  background:linear-gradient(90deg,rgba(201,168,76,.15),#c9a84c 40%,#f1d991);
+  transform:scaleX(var(--p,0));transform-origin:var(--p-origin,left);
+  box-shadow:0 0 12px rgba(201,168,76,.55)}
+
+/* ── Hero: particles, tooth tilt, word reveal ─────────────────── */
+.fx-dust{position:absolute;inset:-80px -6vw -40px;width:calc(100% + 12vw);height:calc(100% + 120px);
+  pointer-events:none;z-index:-1;opacity:0;transition:opacity 2s ease .6s}
+.fx .hub-ready .fx-dust{opacity:1}
+.fx .hero-arch .tooth-3d{transform:rotateX(var(--tx,0deg)) rotateY(var(--ty,0deg));transform-style:preserve-3d;will-change:transform}
+.fx .hero-arch::after{content:'';position:absolute;inset:12%;border-radius:50%;z-index:-1;
+  background:radial-gradient(circle,rgba(201,168,76,.22),transparent 65%);filter:blur(18px);
+  animation:fxBreath 6s ease-in-out infinite}
+@keyframes fxBreath{50%{transform:scale(1.12);opacity:.65}}
+
+.fx h1.hero-h.fx-split .ln>span{transform:none!important;transition:none!important}
+.fx h1.hero-h .fx-w{display:inline-block;overflow:hidden;vertical-align:top;padding-block:.08em;margin-block:-.08em}
+.fx h1.hero-h .fx-w>span{display:inline-block;transform:translateY(105%) rotate(4deg);opacity:0;filter:blur(6px);
+  transition:transform 1.1s var(--e),opacity 1.1s var(--e),filter 1.1s var(--e);transition-delay:calc(.25s + var(--i)*.09s)}
+.fx .hub-ready h1.hero-h .fx-w>span{transform:none;opacity:1;filter:none}
+.fx h1.hero-h em .fx-w>span{background:linear-gradient(100deg,#b8923a 0%,#f3dc98 45%,#c9a84c 60%,#b8923a 100%);background-size:220% 100%;
+  -webkit-background-clip:text;background-clip:text;color:transparent;animation:fxSheen 6s ease-in-out 2s infinite}
+@keyframes fxSheen{0%,100%{background-position:100% 0}50%{background-position:0 0}}
+
+.fx .hero-avatar{position:relative;overflow:visible}
+.fx .hero-avatar img{border-radius:50%;display:block;width:100%;height:100%;object-fit:cover}
+.fx .hero-avatar{border-color:rgba(201,168,76,.55);animation:fxHalo 7s ease-in-out 1.5s infinite}
+@keyframes fxHalo{0%,100%{box-shadow:0 0 22px rgba(201,168,76,.14)}50%{box-shadow:0 0 34px rgba(201,168,76,.3)}}
+
+/* ── Generic reveal on scroll ────────────────────────────────── */
+.fx .fx-r{opacity:0;transform:translateY(28px);transition:opacity .9s var(--e),transform .9s var(--e);transition-delay:var(--d,0s)}
+.fx .fx-r.fx-in{opacity:1;transform:none}
+.fx .wcard,.fx .worlds-head,.fx .hub-contact{transition-delay:var(--d,0s)}
+
+/* ── World cards: tilt, shine, big numerals ──────────────────── */
+.fx .wcard{transform-style:preserve-3d}
+.fx .wcard.in{transform:perspective(1000px) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg)) translateY(var(--lift,0px))!important;
+  transition:transform .6s var(--e),border-color .6s var(--e),box-shadow .6s var(--e),opacity .9s var(--e)}
+.fx .wcard.in:hover{--lift:-6px}
+.fx .wcard.in.fx-tilting{transition:transform .12s linear,border-color .6s var(--e),box-shadow .6s var(--e)}
+.fx .wcard::after{content:'';position:absolute;inset:0;pointer-events:none;opacity:0;transition:opacity .4s;
+  background:radial-gradient(420px circle at var(--mx,50%) var(--my,50%),rgba(255,236,180,.13),transparent 45%)}
+.fx .wcard:hover::after{opacity:1}
+.fx .wcard-num{font-size:clamp(2.2rem,3.2vw,3rem);font-weight:200;line-height:1;color:transparent;
+  -webkit-text-stroke:1px var(--wc);opacity:.55;transition:opacity .5s,transform .6s var(--e);font-variant-numeric:tabular-nums}
+.fx .wcard:hover .wcard-num{opacity:1;transform:translateY(-3px)}
+.fx .wcard-name,.fx .wcard-desc,.fx .wcard-icon{transform:translateZ(24px)}
+
+/* ── Scene change: gold sweep ────────────────────────────────── */
+.fx-sweep{position:fixed;inset:0;z-index:350;pointer-events:none;overflow:hidden}
+.fx-sweep::before{content:'';position:absolute;top:0;bottom:0;width:45vw;inset-inline-start:-50vw;
+  background:linear-gradient(90deg,transparent,rgba(201,168,76,.10) 40%,rgba(243,220,152,.22) 50%,rgba(201,168,76,.10) 60%,transparent);
+  filter:blur(4px)}
+.fx-sweep.go::before{animation:fxSweep .9s var(--e) forwards}
+[dir=rtl] .fx-sweep.go::before{animation-name:fxSweepRtl}
+@keyframes fxSweep{to{transform:translateX(160vw)}}
+@keyframes fxSweepRtl{to{transform:translateX(-160vw)}}
+
+/* ── Language switch & nav buttons ───────────────────────────── */
+.fx .lang-switch a{position:relative}
+.fx .lang-switch a,.fx #faSiteLink,.fx #trSiteLink{overflow:hidden;isolation:isolate;transition:color .35s,border-color .35s,transform .3s var(--e)}
+.fx .lang-switch a::before,.fx #faSiteLink::before,.fx #trSiteLink::before{content:'';position:absolute;inset:0;z-index:-1;background:#c9a84c;
+  transform:scaleY(0);transform-origin:bottom;transition:transform .45s var(--e)}
+.fx .lang-switch a:hover,.fx #faSiteLink:hover,.fx #trSiteLink:hover{color:#080808!important}
+.fx .lang-switch a:hover::before,.fx #faSiteLink:hover::before,.fx #trSiteLink:hover::before{transform:scaleY(1)}
+.fx .lang-switch a.active{box-shadow:0 0 14px rgba(201,168,76,.28) inset}
+.fx [data-magnetic]{transition:transform .35s var(--e)}
+
+/* ── Custom cursor (fine pointers only) ──────────────────────── */
+.fx-cursor{position:fixed;top:0;left:0;z-index:500;pointer-events:none;border-radius:50%;opacity:0;transition:opacity .3s}
+.fx-cursor.dot{width:6px;height:6px;margin:-3px 0 0 -3px;background:#f3dc98}
+.fx-cursor.ring{width:36px;height:36px;margin:-18px 0 0 -18px;border:1px solid rgba(201,168,76,.6);
+  transition:opacity .3s,width .35s var(--e),height .35s var(--e),margin .35s var(--e),background .35s,border-color .35s}
+.fx-cursor-on .fx-cursor{opacity:1}
+.fx-cursor-on .fx-cursor.ring.hot{width:64px;height:64px;margin:-32px 0 0 -32px;background:rgba(201,168,76,.10);border-color:#f3dc98}
+.fx-cursor-on .fx-cursor.ring.down{width:26px;height:26px;margin:-13px 0 0 -13px}
+.fx-cursor-hide,.fx-cursor-hide a,.fx-cursor-hide button,.fx-cursor-hide [data-goto]{cursor:none}
+.fx-cursor-hide input,.fx-cursor-hide textarea,.fx-cursor-hide select{cursor:auto}
+
+/* ── Latest articles: horizontal reel driven by vertical scroll ── */
+/* sticky needs ancestors that clip without becoming scroll containers */
+html.fx,.fx body{overflow-x:clip}
+.fx .hub-body{overflow:clip}
+.fx .latest-home.fx-has-reel{grid-template-columns:1fr;border-bottom:0;margin-bottom:0;padding-bottom:10px}
+.fx .latest-home.fx-has-reel>article{display:none}
+.fx-reel{position:relative;width:100vw;margin-inline:calc(50% - 50vw);margin-bottom:40px}
+.fx-reel-sticky{position:sticky;top:var(--nav-h,72px);height:calc(100svh - var(--nav-h,72px));overflow:hidden;display:flex;flex-direction:column;justify-content:center;gap:26px;perspective:1400px}
+.fx-reel-track{display:flex;gap:28px;padding-inline:max(4vw,calc(50vw - 590px));width:max-content;will-change:transform}
+.fx-reel-card{position:relative;flex:0 0 auto;width:min(380px,78vw);display:flex;flex-direction:column;background:#111;border:1px solid rgba(201,168,76,.18);
+  overflow:hidden;color:var(--tx,#e8e0d0);text-decoration:none;transform-origin:center;will-change:transform,opacity;transition:border-color .4s,box-shadow .4s}
+.fx-reel-card:hover{border-color:rgba(201,168,76,.6);box-shadow:0 18px 50px rgba(201,168,76,.12)}
+.fx-reel-media{position:relative;aspect-ratio:16/10;overflow:hidden;background:#1a1a1a}
+.fx-reel-media img{width:100%;height:100%;object-fit:cover;display:block;transform:scale(1.08) translateX(var(--par,0px));transition:filter .5s;filter:saturate(.85) brightness(.85)}
+.fx-reel-card:hover .fx-reel-media img{filter:none}
+.fx-reel-media::after{content:'';position:absolute;inset:0;background:linear-gradient(to top,#111 0%,transparent 55%)}
+.fx-reel-chip{position:absolute;top:14px;inset-inline-start:14px;z-index:1;font-size:.72rem;padding:4px 10px;background:rgba(8,8,8,.7);border:1px solid rgba(201,168,76,.4);color:#e8c97a;backdrop-filter:blur(6px)}
+.fx-reel-body{padding:4px 22px 24px;display:flex;flex-direction:column;gap:10px;flex:1}
+.fx-reel-date{font-size:.78rem;color:#c9a84c}
+.fx-reel-title{font-size:1.18rem;font-weight:500;line-height:1.7;margin:0}
+.fx-reel-sum{font-size:.88rem;line-height:1.9;color:var(--tx-d,rgba(232,224,208,.65));display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;margin:0}
+.fx-reel-more{margin-top:auto;font-size:.85rem;color:#e8c97a}
+.fx-reel-card.fx-reel-end{justify-content:center;align-items:center;text-align:center;gap:14px;padding:40px 24px;background:radial-gradient(circle at 50% 40%,rgba(201,168,76,.14),#0d0d0d 70%)}
+.fx-reel-end b{font-size:1.5rem;font-weight:300}
+.fx-reel-end span{width:56px;height:56px;border-radius:50%;border:1px solid #c9a84c;display:grid;place-items:center;color:#e8c97a;font-size:1.2rem}
+.fx-reel-meta{display:flex;align-items:center;gap:16px;padding-inline:max(4vw,calc(50vw - 590px));font-size:.8rem;color:var(--tx-d,rgba(232,224,208,.65))}
+.fx-reel-line{flex:1;height:1px;background:rgba(232,224,208,.12);position:relative;overflow:hidden}
+.fx-reel-line i{position:absolute;inset-block:0;inset-inline-start:0;width:100%;background:#c9a84c;transform:scaleX(var(--rp,0));transform-origin:var(--p-origin,left)}
+.fx-reel-count{font-variant-numeric:tabular-nums;color:#e8c97a;min-width:5ch}
+.fx-reel.fx-static .fx-reel-sticky{position:relative;top:0;height:auto;padding-block:20px}
+.fx-reel.fx-static .fx-reel-track{width:auto;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:12px}
+.fx-reel.fx-static .fx-reel-card{scroll-snap-align:center}
+@media (max-width:640px){.fx-reel-sticky{gap:18px}.fx-reel-track{gap:16px}.fx-reel-body{padding:2px 18px 20px}.fx-reel-title{font-size:1.05rem}}
+
+/* ── Accessibility ───────────────────────────────────────────── */
+@media (prefers-reduced-motion:reduce){
+  .fx-dust,.fx-cursor,.fx-sweep{display:none!important}
+  .fx .fx-r{opacity:1!important;transform:none!important}
+  .fx h1.hero-h .fx-w>span{transform:none!important;opacity:1!important;filter:none!important}
+}
+@media print{.fx-progress,.fx-dust,.fx-cursor,.fx-sweep{display:none!important}}
